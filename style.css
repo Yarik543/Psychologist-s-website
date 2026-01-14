@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: none;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2%;
+  background-color: rgba(249, 252, 255, 1);
+  color: rgba(77, 77, 82, 1);
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-color: rgba(249, 252, 255, 1);
+  height: 720px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 0 0 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+  margin-block: 10px;
+}
+
+.menu > li {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.88;
+  letter-spacing: 2%;
+}
+
+.menu > li:hover {
+  color: rgba(120, 114, 185, 1);
+}
+.logo {
+  width: 170px;
+  height: 44px;
+  margin-block: 3px;
+  margin-left: 0;
+}
+
+.button {
+  border: 2px rgba(120, 114, 185, 1) solid;
+  color: rgba(120, 114, 185, 1);
+  border-radius: 10px;
+  line-height: 140%;
+  font-weight: 600;
+  padding: 14px 35px;
+  text-decoration: none;
+  margin: 0;
+}
+
+.button:hover {
+  background-color: rgb(240, 242, 245);
+}
+.main-info {
+  max-width: 640px;
+  margin: 92px 0;
+}
+
+h1 {
+  font-size: 44px;
+  color: rgba(120, 114, 185, 1);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 130%;
+  color: rgba(120, 114, 185, 1);
+  margin: 0 auto;
+  padding: auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1%;
+  color: rgba(77, 77, 82, 1);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: center;
+}
+
+.h2-main {
+  font-size: 40px;
+  max-width: 420px;
+  font-weight: 600;
+  line-height: 140%;
+  margin: 10px 0 81px;
+  color: rgba(77, 77, 82, 1);
+  text-align: left;
+}
+
+.btn-search {
+  background-color: rgba(120, 114, 185, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  border-radius: 16px;
+  text-decoration: none;
+  padding: 18px 80px;
+  cursor: pointer;
+  box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+}
+
+.btn-search:hover {
+  background-color: rgb(80, 76, 126);
+}
+.text {
+  margin-top: 60px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.main-content .container {
+  position: relative;
+}
+
+.main-image {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  max-width: 400px;
+  max-height: 444px;
+}
+
+.blobs {
+  position: absolute;
+  top: -30px;
+  right: calc(50% - 80px);
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.message-icon {
+  position: absolute;
+  right: 0;
+  top: 450px;
+  margin-bottom: 18px;
+}
+
+.second-block {
+  padding: 82px 0 100px;
+  background-color: #fff;
+}
+
+.second-block img {
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.card-info {
+  width: 380px;
+  height: 300px;
+  margin-top: 190px;
+  padding: 130px 0 44px;
+  box-sizing: border-box;
+  background-color: rgba(235, 245, 255, 1);
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-info h3 {
+  letter-spacing: 2%;
+  margin-bottom: 15px;
+}
+
+.card-info:nth-child(2) h3 {
+  max-width: 220px;
+  margin-bottom: 18px;
+}
+
+.card-info:nth-child(2) {
+  height: 350px;
+}
+
+.image-second_block {
+  position: absolute;
+  left: 85px;
+  top: -100px;
+}
+
+.card-info p {
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.card-info:nth-child(3) p {
+  max-width: 230px;
+}
+
+.third-block {
+  padding: 80px 0 90px;
+  overflow: hidden;
+}
+
+.third-block .container {
+  max-width: 100%;
+  position: relative;
+}
+
+.third-block h4 {
+  max-width: 578px;
+  margin: 0 auto;
+}
+
+.third-block ul {
+  list-style: none;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 600;
+  margin-top: 145px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 20px 20px;
+  position: relative;
+}
+
+.third-block ul li {
+  padding: 13px 25px;
+  align-self: center;
+  box-sizing: border-box;
+  transform: translateX(-35px);
+}
+
+.third-block ul li:nth-child(-n + 7) {
+  transform: translateX(-23px);
+  padding-inline: 32px;
+}
+
+.third-block ul li:nth-child(9) {
+  transform: translateX(-35px);
+}
+
+.third-block ul li:nth-child(10) {
+  transform: translateX(-28px);
+}
+
+.third-block ul li:nth-child(11) {
+  transform: translateX(-17px);
+}
+
+.third-block ul li:nth-child(12) {
+  transform: translateX(-10px);
+}
+
+.third-block ul li:nth-child(13) {
+  margin-left: -40px;
+  transform: translateX(40px);
+}
+
+.white-element {
+  border-radius: 40px;
+  border: 2px rgba(120, 114, 185, 1) solid;
+  text-align: center;
+  color: rgba(120, 114, 185, 1);
+}
+
+.purple-element {
+  border-radius: 40px;
+  background-color: rgba(120, 114, 185, 1);
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.arrow {
+  position: absolute;
+  right: 300px;
+  top: 100px;
+}
