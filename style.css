@@ -324,3 +324,63 @@ h4 {
   right: 300px;
   top: 100px;
 }
+
+.four-block {
+  background-color: #fff;
+  padding-block: 100px;
+}
+
+.four-block .container {
+  position: relative;
+}
+
+.four-block h2,
+.four-block h3,
+.four-block h4 {
+  text-align: left;
+}
+
+.four-block h2 {
+  margin-bottom: 27px;
+}
+
+.four-block h3 {
+  margin-bottom: 10px;
+}
+
+.line {
+  position: absolute;
+  left: 290px;
+  top: 155px;
+  width: 321px;
+  height: 11px;
+}
+
+.card-advantages {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 30px;
+  margin-top: 59px;
+}
+
+.advantage {
+  background-color: rgba(235, 245, 255, 1);
+  border-radius: 20px;
+}
+
+.flex {
+  display: flex;
+  gap: 50px;
+}
+
+.book {
+  width: 150px;
+  height: 150px;
+  padding: 20px 0 20px 30px;
+}
+
+.watch {
+  width: 150px;
+  height: 150px;
+  padding: 20px 0 20px 30px;
+}
