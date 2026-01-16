@@ -96,22 +96,50 @@
             Профессиональные психологи помогут разобрать вопросы, которые вы не
             можете решить в одиночку:
           </h4>
+
           <img class="arrow" src="images/noun-arrow.png" alt="arrow" />
-          <ul class="card-container">
-            <li class="white-element">Фобии</li>
-            <li class="white-element">Неврозы</li>
-            <li class="purple-element">Самооценка</li>
-            <li class="white-element">Апатия</li>
-            <li class="white-element">Стрессы</li>
-            <li class="purple-element no">Неуверенность в себе</li>
-            <li class="purple-element">Мотивация</li>
-            <li class="purple-element">Депрессивное состояние</li>
-            <li class="white-element">Безразличие</li>
-            <li class="purple-element">Чувство тревоги</li>
-            <li class="white-element">Хроническая усталость</li>
-            <li class="white-element">Отношения</li>
-            <li class="white-element">Выгорание</li>
-          </ul>
+
+          <!-- Первая строка -->
+          <div class="marquee">
+            <ul class="marquee-track">
+              <li class="white-element">Фобии</li>
+              <li class="white-element">Неврозы</li>
+              <li class="purple-element">Самооценка</li>
+              <li class="white-element">Апатия</li>
+              <li class="white-element">Стрессы</li>
+              <li class="purple-element">Неуверенность в себе</li>
+              <li class="purple-element">Мотивация</li>
+
+              <!-- Дубликат для бесшовности -->
+              <li class="white-element">Фобии</li>
+              <li class="white-element">Неврозы</li>
+              <li class="purple-element">Самооценка</li>
+              <li class="white-element">Апатия</li>
+              <li class="white-element">Стрессы</li>
+              <li class="purple-element">Неуверенность в себе</li>
+              <li class="purple-element">Мотивация</li>
+            </ul>
+          </div>
+
+          <!-- Вторая строка -->
+          <div class="marquee reverse">
+            <ul class="marquee-track">
+              <li class="purple-element">Депрессивное состояние</li>
+              <li class="white-element">Безразличие</li>
+              <li class="purple-element">Чувство тревоги</li>
+              <li class="white-element">Хроническая усталость</li>
+              <li class="white-element">Отношения</li>
+              <li class="white-element">Выгорание</li>
+
+              <!-- Дубликат -->
+              <li class="purple-element">Депрессивное состояние</li>
+              <li class="white-element">Безразличие</li>
+              <li class="purple-element">Чувство тревоги</li>
+              <li class="white-element">Хроническая усталость</li>
+              <li class="white-element">Отношения</li>
+              <li class="white-element">Выгорание</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -122,7 +150,7 @@
             квалифицированными специалистами, которые прошли наш строгий отбор
           </h2>
           <img src="images/line.png" alt="line" class="line" />
-          <h4>
+          <h4 id="four-main-h4">
             Помимо серии собеседований и испытаний по разработанной нами
             методологии, психологи предоставляют необходимые документы:
           </h4>
