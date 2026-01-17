@@ -733,6 +733,7 @@ h5 {
   align-items: center;
   gap: 160px;
   box-sizing: border-box;
+  margin-bottom: 158px;
 }
 
 .themes {
@@ -801,3 +802,48 @@ h5 {
   z-index: -100;
   left: 22px;
 }
+/*Подблок 5 с кнопкой*/
+.five-button-step {
+  display: flex;
+  align-items: center;
+  gap: 321px;
+}
+
+.text-number-5 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  width: 432px;
+}
+
+.text-number-5 p {
+  width: 312px;
+}
+
+.circle-5 {
+  position: absolute;
+  z-index: -100;
+  left: 50px;
+}
+
+.button_first_step {
+  background-color: rgba(120, 114, 185, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  line-height: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 25px 68px;
+  text-decoration: none;
+  width: 390px;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+}
+
+.button_first_step:hover {
+  background-color: rgb(80, 76, 126);
+}
+/*Блок 6*/
