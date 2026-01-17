@@ -501,11 +501,11 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 80px;
+  margin: 80px 0 160px;
   gap: 200px;
 }
 
-.text-number {
+.text-number-1 {
   display: flex;
   align-items: center;
   gap: 60px;
@@ -582,4 +582,222 @@ h5 {
 
 .oval7 {
   grid-column: 4/6;
+}
+
+/*Второй подблок*/
+.second-step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 160px;
+  gap: 160px;
+}
+
+/*Профили*/
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-shadow: 8px 8px 1px rgba(205, 225, 255, 1);
+  width: 480px;
+  padding: 28px 30px 26px;
+}
+
+.line-underProfile {
+  width: 80px;
+  height: 10px;
+  background-color: rgba(235, 245, 255, 1);
+  border-radius: 30px;
+  margin-inline: auto;
+}
+
+.profiles h5 {
+  margin-block: 8px;
+  background-color: rgba(235, 245, 255, 1);
+  border-radius: 30px;
+  width: 120px;
+}
+
+.img-profile_3,
+.img-profile_2,
+.img-profile_1 {
+  margin-inline: 10px;
+}
+/*Текстовый блок*/
+
+.text-number-2 {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+}
+
+.circle-2 {
+  position: absolute;
+  left: 28px;
+  z-index: -100;
+}
+
+.text-block-2 h3 {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/*Подблок 3*/
+.third-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 160px;
+  gap: 190px;
+}
+
+.text-number-3 {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  position: relative;
+  width: 510px;
+}
+
+.number-3 {
+  width: 89px;
+  height: 100px;
+}
+
+.circle-3 {
+  position: absolute;
+  left: 28px;
+  top: -25px;
+  z-index: -100;
+}
+
+.text-block-3 h3 {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.calendar {
+  display: flex;
+  align-items: top;
+  gap: 40px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-shadow: 8px 8px 1px rgba(205, 225, 255, 1);
+  padding: 30px 50px 24px 30px;
+}
+
+.graph {
+  display: grid;
+  grid-template: repeat(3, 30px) / repeat(6, 30px);
+  gap: 20px;
+}
+
+.day-of-calendar {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(235, 245, 255, 1);
+  border-radius: 5px;
+  margin: 0;
+}
+
+.red {
+  background-color: rgba(250, 120, 140, 1);
+}
+
+.third-step .line-underProfile {
+  margin: 0 0 10px;
+}
+
+.line-underProfile_small {
+  width: 60px;
+  height: 10px;
+  background-color: rgba(235, 245, 255, 1);
+  border-radius: 30px;
+}
+
+.profile_4 {
+  width: 80px;
+}
+
+.profile_4 h5 {
+  text-align: left;
+  margin-block: 8px;
+}
+
+/*Подблок 4*/
+.four-step {
+  display: flex;
+  align-items: center;
+  gap: 160px;
+  box-sizing: border-box;
+}
+
+.themes {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-shadow: 8px 8px 1px rgba(205, 225, 255, 1);
+  padding: 30px 40px 30px 30px;
+  width: 410px;
+}
+
+.themes h5 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.themes-block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.mark-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.mark-box.purple {
+  background-color: rgba(150, 145, 210, 1);
+}
+
+.mark-box.white {
+  border: 1px solid rgba(150, 145, 210, 1);
+  box-sizing: border-box;
+}
+
+.line-blue {
+  width: 150px;
+  height: 10px;
+  background-color: rgba(235, 245, 255, 1);
+  border-radius: 20px;
+}
+
+.theme-block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 190px;
+  flex-wrap: wrap;
+}
+
+.text-number-4 {
+  width: 502px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.text-number-4 h3 {
+  text-align: left;
+}
+
+.circle-4 {
+  position: absolute;
+  z-index: -100;
+  left: 22px;
 }
