@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/Montserrat-Regular.woff") format("woff");
@@ -29,6 +33,10 @@ body {
   background-color: rgba(249, 252, 255, 1);
   color: rgba(77, 77, 82, 1);
   box-sizing: border-box;
+}
+
+button {
+  user-select: none;
 }
 
 .container {
@@ -79,6 +87,7 @@ body {
   padding: 14px 35px;
   text-decoration: none;
   margin: 0;
+  user-select: none;
 }
 
 .button:hover {
@@ -126,6 +135,16 @@ h4 {
 
 h5 {
   font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: left;
+  color: rgba(77, 77, 82, 1);
+}
+
+h6 {
+  font-family: Montserrat;
   font-weight: 700;
   font-size: 14px;
   line-height: 140%;
@@ -155,6 +174,7 @@ h5 {
   padding: 18px 80px;
   cursor: pointer;
   box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+  user-select: none;
 }
 
 .btn-search:hover {
@@ -531,7 +551,7 @@ h5 {
   box-shadow: 8px 8px 1px rgba(205, 225, 255, 1);
 }
 
-.anxiety h5 {
+.anxiety h6 {
   text-align: left;
 }
 
@@ -613,7 +633,7 @@ h5 {
   margin-inline: auto;
 }
 
-.profiles h5 {
+.profiles h6 {
   margin-block: 8px;
   background-color: rgba(235, 245, 255, 1);
   border-radius: 30px;
@@ -721,7 +741,7 @@ h5 {
   width: 80px;
 }
 
-.profile_4 h5 {
+.profile_4 h6 {
   text-align: left;
   margin-block: 8px;
 }
@@ -743,7 +763,7 @@ h5 {
   width: 410px;
 }
 
-.themes h5 {
+.themes h6 {
   text-align: left;
   margin-bottom: 20px;
 }
@@ -846,3 +866,47 @@ h5 {
   background-color: rgb(80, 76, 126);
 }
 /*Блок 6*/
+.six-block {
+  background-color: #fff;
+  padding: 120px 0 84px;
+}
+
+details {
+  background-color: rgba(235, 245, 255, 1);
+  padding: 30px 100px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  overflow: hidden;
+  user-select: none;
+}
+
+details p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  max-width: 700px;
+  margin-top: 7px;
+}
+
+.quetion1 {
+  margin-top: 60px;
+}
+
+details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+summary::after {
+  content: url("images/plus.png");
+  transition: all 0.3s ease 0s;
+}
+
+details[open] summary::after {
+  content: url("images/minus.png");
+  transform: rotate(-0.5turn);
+}
