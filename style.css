@@ -356,7 +356,7 @@ h6 {
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee-left 15s linear infinite;
+  animation: move-to-left 15s infinite linear;
   list-style: none;
   font-size: 20px;
   line-height: 120%;
@@ -365,7 +365,28 @@ h6 {
 }
 
 .marquee.reverse .marquee-track {
-  animation: marquee-right 15s linear infinite;
+  animation: move-to-right 15s infinite linear;
+}
+
+/*Animations*/
+@keyframes move-to-left {
+  from {
+    translate: 0%;
+  }
+
+  to {
+    translate: -50%;
+  }
+}
+
+@keyframes move-to-right {
+  from {
+    translate: -50%;
+  }
+
+  to {
+    translate: 0%;
+  }
 }
 
 /* Items */
@@ -373,25 +394,6 @@ h6 {
   padding: 13px 40px;
   margin-right: 30px;
   white-space: nowrap;
-}
-
-/* Animations */
-@keyframes marquee-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes marquee-right {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
 }
 
 /*Блок 4, преимущества*/
