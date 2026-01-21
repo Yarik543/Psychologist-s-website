@@ -37,6 +37,7 @@ body {
 
 button {
   user-select: none;
+  display: block;
 }
 
 .container {
@@ -175,11 +176,14 @@ h6 {
   cursor: pointer;
   box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
   user-select: none;
+  transition: box-shadow 0.5s;
 }
 
 .btn-search:hover {
   background-color: rgb(80, 76, 126);
+  box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
 }
+
 .text {
   margin-top: 60px;
   margin-left: 15px;
@@ -370,10 +374,6 @@ h6 {
 
 /*Animations*/
 @keyframes move-to-left {
-  from {
-    translate: 0%;
-  }
-
   to {
     translate: -50%;
   }
@@ -382,10 +382,6 @@ h6 {
 @keyframes move-to-right {
   from {
     translate: -50%;
-  }
-
-  to {
-    translate: 0%;
   }
 }
 
@@ -862,10 +858,12 @@ h6 {
   margin: 0;
   cursor: pointer;
   box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+  transition: box-shadow 0.5s;
 }
 
 .button_first_step:hover {
   background-color: rgb(80, 76, 126);
+  box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
 }
 /*Блок 6*/
 .six-block {
@@ -911,4 +909,85 @@ summary::after {
 details[open] summary::after {
   content: url("images/minus.png");
   transform: rotate(-0.5turn);
+}
+
+/*Блок 7*/
+.seven-block {
+  padding: 120px 0 135px;
+}
+
+.seven-block h2,
+h4 {
+  text-align: left;
+}
+
+.seven-block h2 {
+  max-width: 680px;
+  margin: 0 0 35px;
+}
+
+.seven-block h4 {
+  max-width: 550px;
+  font-weight: 600;
+}
+
+.application-points {
+  display: grid;
+  grid-template-columns: 40px 440px;
+  align-items: center;
+  gap: 45px 30px;
+  max-width: 510px;
+  margin-top: 45px;
+}
+
+.application-points p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1%;
+}
+
+.application-points p:first-of-type {
+  max-width: 330px;
+}
+
+.app-image-container {
+  display: flex;
+  gap: 111px;
+}
+
+.phones {
+  margin-top: 14px;
+}
+
+.btnDownload {
+  border-radius: 15px;
+  padding: 25px 70px;
+  border: none;
+  background-color: rgba(120, 114, 185, 1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 10px 15px 1px rgba(205, 225, 255, 1);
+  margin: 97px auto 0;
+  transition: box-shadow 0.5s;
+}
+
+.btnDownload a,
+.btnDownload a:visited,
+.btnDownload a:hover,
+.btnDownload a:active,
+.btnDownload a:focus-visible {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btnDownload:hover {
+  background-color: rgb(80, 76, 126);
+  cursor: pointer;
+  box-shadow: 3px 7px 1px rgba(205, 225, 255, 1);
 }
