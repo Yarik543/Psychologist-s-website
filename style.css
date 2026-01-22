@@ -40,6 +40,11 @@ button {
   display: block;
 }
 
+.circle {
+  position: absolute;
+  z-index: -100;
+}
+
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -76,7 +81,7 @@ button {
 }
 
 .main-content {
-  height: 524px;
+  min-height: 524px;
 }
 
 .button {
@@ -393,34 +398,34 @@ h6 {
 }
 
 /*Блок 4, преимущества*/
-.four-block {
+.fourth-block {
   background-color: #fff;
   padding-block: 100px;
 }
 
-.four-block .container {
+.fourth-block .container {
   position: relative;
 }
 
-.four-block h2,
-.four-block h3,
-.four-block h4 {
+.fourth-block h2,
+.fourth-block h3,
+.fourth-block h4 {
   text-align: left;
 }
 
-.four-block h2 {
+.fourth-block h2 {
   margin: 0;
   margin-bottom: 27px;
-  width: 1080px;
+  max-width: 1080px;
 }
 
-.four-block h3 {
+.fourth-block h3 {
   margin-bottom: 10px;
 }
 
 #four-main-h4 {
   margin-bottom: 10px;
-  width: 780px;
+  max-width: 780px;
 }
 
 .line {
@@ -493,11 +498,11 @@ h6 {
 }
 
 #passing {
-  width: 290px;
+  min-width: 290px;
 }
 
 /*Блок 5 - шаги терапии*/
-.five-block {
+.fifth-block {
   padding: 100px 0 131px;
 }
 
@@ -505,7 +510,7 @@ h6 {
   text-align: left;
 }
 
-.five-block p {
+.fifth-block p {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 20px;
@@ -536,9 +541,7 @@ h6 {
 }
 
 .circle-1 {
-  position: absolute;
   left: 22px;
-  z-index: -100;
 }
 
 .anxiety {
@@ -653,9 +656,7 @@ h6 {
 }
 
 .circle-2 {
-  position: absolute;
   left: 28px;
-  z-index: -100;
 }
 
 .text-block-2 h3 {
@@ -685,10 +686,8 @@ h6 {
 }
 
 .circle-3 {
-  position: absolute;
   left: 28px;
   top: -25px;
-  z-index: -100;
 }
 
 .text-block-3 h3 {
@@ -815,8 +814,6 @@ h6 {
 }
 
 .circle-4 {
-  position: absolute;
-  z-index: -100;
   left: 22px;
 }
 /*Подблок 5 с кнопкой*/
@@ -839,8 +836,6 @@ h6 {
 }
 
 .circle-5 {
-  position: absolute;
-  z-index: -100;
   left: 50px;
 }
 
@@ -866,7 +861,7 @@ h6 {
   box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
 }
 /*Блок 6*/
-.six-block {
+.sixth-block {
   background-color: #fff;
   padding: 120px 0 84px;
 }
@@ -912,21 +907,21 @@ details[open] summary::after {
 }
 
 /*Блок 7*/
-.seven-block {
+.seventh-block {
   padding: 120px 0 135px;
 }
 
-.seven-block h2,
-h4 {
+.seventh-block h2,
+.seventh-block h4 {
   text-align: left;
 }
 
-.seven-block h2 {
+.seventh-block h2 {
   max-width: 680px;
   margin: 0 0 35px;
 }
 
-.seven-block h4 {
+.seventh-block h4 {
   max-width: 550px;
   font-weight: 600;
 }
