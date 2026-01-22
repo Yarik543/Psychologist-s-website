@@ -964,6 +964,8 @@ h4 {
   border-radius: 15px;
   padding: 25px 70px;
   border: none;
+  width: 380px;
+  height: 70px;
   background-color: rgba(120, 114, 185, 1);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -975,19 +977,69 @@ h4 {
   box-shadow: 10px 15px 1px rgba(205, 225, 255, 1);
   margin: 97px auto 0;
   transition: box-shadow 0.5s;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 135px;
 }
 
-.btnDownload a,
-.btnDownload a:visited,
-.btnDownload a:hover,
-.btnDownload a:active,
-.btnDownload a:focus-visible {
+.btnDownload,
+.btnDownload:visited,
+.btnDownload:hover,
+.btnDownload:active,
+.btnDownload:focus-visible {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 .btnDownload:hover {
   background-color: rgb(80, 76, 126);
   cursor: pointer;
   box-shadow: 3px 7px 1px rgba(205, 225, 255, 1);
+}
+
+/*Блок 8*/
+.eighth-block {
+  padding-block: 120px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.eighth-block .container {
+  background-color: rgba(249, 252, 255, 1);
+  border-radius: 25px;
+  text-align: left;
+  padding: 55px 130px 72px 100px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.eighth-block .container h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.eighth-block .container h3 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.eighth-block .container h4 {
+  max-width: 780px;
+}
+
+.numbers-container {
+  width: 950px;
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  gap: 30px 50px;
+  margin-top: 50px;
+}
+
+.number-text-fourth {
+  margin-bottom: -30px;
+}
+
+.call-specialist {
+  position: absolute;
+  top: -29px;
+  right: 30px;
 }
