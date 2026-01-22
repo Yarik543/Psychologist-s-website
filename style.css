@@ -974,7 +974,6 @@ details[open] summary::after {
   transition: box-shadow 0.5s;
   display: block;
   box-sizing: border-box;
-  margin-bottom: 135px;
 }
 
 .btnDownload,
@@ -1019,6 +1018,7 @@ details[open] summary::after {
 
 .eighth-block .container h4 {
   max-width: 780px;
+  text-align: left;
 }
 
 .numbers-container {
@@ -1037,4 +1037,81 @@ details[open] summary::after {
   position: absolute;
   top: -29px;
   right: 30px;
+}
+
+/*footer*/
+.footer {
+  padding-block: 80px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.footer .logo {
+  width: 180px;
+  height: 46px;
+}
+
+.logotypes-container {
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+  flex-wrap: wrap;
+  gap: 37px 30px;
+  margin-right: 20px;
+}
+
+.support-block a {
+  color: rgba(120, 114, 185, 1);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-decoration: none;
+}
+
+.support-block h6 {
+  text-align: left;
+  color: rgba(77, 77, 82, 1);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1%;
+  margin-bottom: 6px;
+}
+
+.support-subBlock:nth-child(1) {
+  margin-bottom: 21px;
+}
+
+.about-block {
+  display: grid;
+  grid-template-columns: 150px;
+  gap: 24px;
+}
+
+.footer h5 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(120, 114, 185, 1);
+}
+
+.politic-block h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  color: rgba(77, 77, 82, 1);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
+  text-align: left;
+}
+
+.politic-block h6:not(:last-child) {
+  margin-bottom: 20px;
 }
