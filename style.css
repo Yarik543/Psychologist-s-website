@@ -1081,9 +1081,11 @@ details[open] summary::after {
   line-height: 140%;
   letter-spacing: 1%;
   margin-bottom: 6px;
+  padding-top: 5px;
 }
 
-.support-subBlock:nth-child(1) {
+.youmiwork-mail {
+  display: block;
   margin-bottom: 21px;
 }
 
