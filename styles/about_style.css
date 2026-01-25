@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: none;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2%;
+  background-color: rgba(249, 252, 255, 1);
+  color: rgba(77, 77, 82, 1);
+}
+
+h1 {
+  font-size: 44px;
+  color: rgba(120, 114, 185, 1);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 130%;
+  color: rgba(120, 114, 185, 1);
+  margin: 0 auto;
+  padding: auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1%;
+  color: rgba(77, 77, 82, 1);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: center;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: left;
+  color: rgba(77, 77, 82, 1);
+}
+
+h6 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: center;
+  color: rgba(120, 114, 185, 1);
+}
+
+button {
+  user-select: none;
+  display: block;
+}
+
+img {
+  user-select: none;
+}
+
+/*HeroBlock*/
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.btnLogin {
+  padding: 14px 35px;
+  border-radius: 10px;
+  font-weight: 550;
+  line-height: 140%;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(120, 114, 185, 1);
+  border: 2px solid rgba(120, 114, 185, 1);
+  background-color: inherit;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.btnLogin:hover {
+  background-color: rgb(240, 242, 245);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+.menu a {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.88;
+  color: rgba(77, 77, 82, 1);
+  text-decoration: none;
+}
+
+.menu a:visited {
+  color: rgba(77, 77, 82, 1);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: rgba(120, 114, 185, 1);
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.hero-block {
+  padding: 80px 0 100px;
+}
+
+.hero-block .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-block-text {
+  position: relative;
+}
+
+.hero-block-text h1:nth-child(1) {
+  margin-bottom: 25px;
+}
+
+.ellipse-hero {
+  position: absolute;
+  left: -27px;
+  bottom: -19px;
+}

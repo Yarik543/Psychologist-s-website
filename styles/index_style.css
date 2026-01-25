@@ -5,11 +5,12 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: none;
   font-display: swap;
@@ -17,13 +18,19 @@ html {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("fonts/Montserrat-ExtraBold.woff") format("woff");
+  src: url("../fonts/Montserrat-ExtraBold.woff") format("woff");
   font-weight: 800;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
 }
 
@@ -40,6 +47,10 @@ button {
   display: block;
 }
 
+img {
+  user-select: none;
+}
+
 .circle {
   position: absolute;
   z-index: -100;
@@ -54,7 +65,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 70px 0 0 0;
+  padding-top: 70px;
 }
 
 .menu {
@@ -63,20 +74,26 @@ button {
   gap: 70px;
 }
 
-.menu > li {
+.menu a {
   cursor: pointer;
   font-weight: 600;
   line-height: 1.88;
-  letter-spacing: 2%;
+  color: rgba(77, 77, 82, 1);
+  text-decoration: none;
 }
 
-.menu > li:hover {
+.menu a:visited {
+  color: rgba(77, 77, 82, 1);
+  text-decoration: none;
+}
+
+.menu a:hover {
   color: rgba(120, 114, 185, 1);
 }
+
 .logo {
   width: 170px;
   height: 44px;
-  margin-block: 3px;
   margin-left: 0;
 }
 
@@ -99,9 +116,9 @@ button {
 .button:hover {
   background-color: rgb(240, 242, 245);
 }
+
 .main-info {
   max-width: 640px;
-  margin: 92px 0;
   padding-top: 17px;
 }
 
@@ -201,19 +218,14 @@ h6 {
 
 .main-content .container {
   position: relative;
-}
-
-.main-image {
-  position: absolute;
-  top: -30px;
-  right: 0;
-  max-width: 400px;
-  max-height: 444px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 75px 0 81px;
 }
 
 .blobs {
   position: absolute;
-  top: -30px;
   right: calc(50% - 80px);
   max-width: 80px;
   max-height: 80px;
@@ -222,8 +234,7 @@ h6 {
 .message-icon {
   position: absolute;
   right: 0;
-  top: 465px;
-  margin-bottom: 18px;
+  bottom: -20px;
 }
 
 /*Блок 2, гарантии*/
@@ -876,7 +887,7 @@ details {
 }
 
 details p {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
@@ -897,12 +908,12 @@ details summary {
 }
 
 summary::after {
-  content: url("images/plus.png");
+  content: url("../images/plus.png");
   transition: all 0.3s ease 0s;
 }
 
 details[open] summary::after {
-  content: url("images/minus.png");
+  content: url("../images/minus.png");
   transform: rotate(-0.5turn);
 }
 
