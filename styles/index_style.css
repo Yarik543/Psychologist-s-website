@@ -257,8 +257,8 @@ h6 {
 }
 
 .card-info {
-  width: 380px;
-  height: 300px;
+  min-width: 380px;
+  min-height: 300px;
   margin-top: 190px;
   padding: 130px 0 44px;
   box-sizing: border-box;
@@ -269,7 +269,6 @@ h6 {
 }
 
 .card-info h3 {
-  letter-spacing: 2%;
   margin-bottom: 15px;
 }
 
@@ -279,7 +278,7 @@ h6 {
 }
 
 .card-info:nth-child(2) {
-  height: 350px;
+  min-height: 350px;
 }
 
 .image-second_block {

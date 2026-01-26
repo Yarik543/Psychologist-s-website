@@ -158,6 +158,11 @@ header .container {
   color: rgba(120, 114, 185, 1);
 }
 
+#about_us {
+  text-decoration: underline rgba(120, 114, 185, 1);
+  text-underline-offset: 10px;
+}
+
 .logo {
   cursor: pointer;
 }
@@ -184,4 +189,52 @@ header .container {
   position: absolute;
   left: -27px;
   bottom: -19px;
+}
+
+/*Блок 2*/
+.second-block {
+  padding: 89px 0 120px;
+  background-color: #fff;
+}
+
+.second-block img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.card-info {
+  min-width: 380px;
+  min-height: 316px;
+  margin-top: 190px;
+  padding: 130px 35px 35px;
+  background-color: rgba(235, 245, 255, 1);
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-info h3 {
+  margin-bottom: 15px;
+}
+
+.card-info:nth-child(2) {
+  height: 339px;
+}
+
+.image-second_block {
+  position: absolute;
+  left: 85px;
+  top: -100px;
+}
+
+.card-info p {
+  max-width: 290px;
+  margin: 0 auto;
 }
