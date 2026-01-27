@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 @font-face {
@@ -77,8 +78,8 @@ h4 {
 
 h5 {
   font-family: Montserrat;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 140%;
   letter-spacing: 1%;
   text-align: left;
@@ -237,4 +238,59 @@ header .container {
 .card-info p {
   max-width: 290px;
   margin: 0 auto;
+}
+
+/*Блок 3*/
+.third-block {
+  background-color: rgba(249, 252, 255, 1);
+  padding-block: 80px;
+}
+
+.third-block .container {
+  position: relative;
+}
+
+.third-block h2,
+.third-block h3,
+.third-block h4 {
+  text-align: left;
+}
+
+.third-block h2 {
+  margin: 0;
+  margin-bottom: 27px;
+  max-width: 1080px;
+}
+
+.third-block h3 {
+  margin-bottom: 10px;
+}
+
+#four-main-h4 {
+  margin-bottom: 10px;
+  max-width: 780px;
+}
+
+.line {
+  position: absolute;
+  left: 490px;
+  top: 155px;
+  width: 321px;
+  height: 11px;
+}
+
+.specialists_container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding-top: 94px;
+}
+
+.specialists_container h3,
+.specialists_container h5 {
+  text-align: center;
+}
+
+.specialists_container img {
+  margin-bottom: 30px;
 }
