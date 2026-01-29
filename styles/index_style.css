@@ -101,7 +101,7 @@ img {
   min-height: 524px;
 }
 
-.button {
+.button-login {
   border: 2px rgba(120, 114, 185, 1) solid;
   color: rgba(120, 114, 185, 1);
   border-radius: 10px;
@@ -113,7 +113,7 @@ img {
   user-select: none;
 }
 
-.button:hover {
+.button-login:hover {
   background-color: rgb(240, 242, 245);
 }
 
@@ -203,11 +203,6 @@ h6 {
   box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
   user-select: none;
   transition: box-shadow 0.5s;
-}
-
-.btn-search:hover {
-  background-color: rgb(80, 76, 126);
-  box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
 }
 
 .text {
@@ -1196,7 +1191,7 @@ details[open] summary::after {
 
   /*1 блок и header*/
   .header ul,
-  .button {
+  .button-login {
     display: none;
   }
 
@@ -1250,5 +1245,12 @@ details[open] summary::after {
     max-width: 40px;
     max-height: 40px;
     bottom: 20px;
+  }
+}
+
+@media (hover: hover) {
+  .btn-search:hover {
+    background-color: rgb(80, 76, 126);
+    box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
   }
 }
