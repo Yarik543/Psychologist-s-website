@@ -186,6 +186,10 @@ h6 {
   text-align: left;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .btn-search {
   background-color: rgba(120, 114, 185, 1);
   color: rgba(255, 255, 255, 1);
@@ -222,13 +226,6 @@ h6 {
   justify-content: space-between;
   align-items: top;
   padding: 75px 0 81px;
-}
-
-.blobs {
-  position: absolute;
-  right: calc(50% - 80px);
-  max-width: 80px;
-  max-height: 80px;
 }
 
 .message-icon {
@@ -1122,4 +1119,99 @@ details[open] summary::after {
 
 .politic-block h6:not(:last-child) {
   margin-bottom: 20px;
+}
+
+/*Адаптив*/
+@media (max-width: 480px) {
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+  }
+
+  h5 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: left;
+    color: rgba(77, 77, 82, 1);
+  }
+
+  h6 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: rgba(120, 114, 185, 1);
+  }
+
+  .h2-main {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 100%;
+    margin-inline: 30px;
+    overflow: hidden;
+  }
+
+  /*1 блок и header*/
+  .header ul,
+  .button {
+    display: none;
+  }
+
+  .logo {
+    max-width: 100px;
+    max-height: 26px;
+  }
+
+  .burger-menu {
+    display: inline-block;
+    max-width: 30px;
+    max-width: 22px;
+  }
+
+  .main-content .container {
+    flex-wrap: wrap;
+  }
+
+  .main-img {
+    max-width: 270px;
+    max-height: 203px;
+  }
 }
