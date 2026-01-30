@@ -367,3 +367,107 @@ header .container {
 #passing {
   min-width: 290px;
 }
+/*Блок 5*/
+.fifth-block {
+  padding: 80px 0 101px;
+}
+
+.hystory-underblock-first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 90px 0 120px;
+}
+
+.hystory-underblock-first_text {
+  max-width: 620px;
+}
+
+.hystory-underblock-first_text h3 {
+  text-align: right;
+  color: rgba(120, 114, 185, 1);
+  margin-bottom: 5px;
+}
+
+.hystory-underblock-first_text p {
+  text-align: right;
+}
+
+.quote-Maria:before {
+  content: url("../images/noun-quotation-mark-1569235 3.png");
+  left: -70px;
+  top: -15px;
+  position: absolute;
+}
+
+.quote-Maria:after {
+  content: url("../images/noun-quotation-mark-1569235 4.png");
+  right: -25px;
+  bottom: -27px;
+  position: absolute;
+}
+
+.quote-Maria {
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: left;
+  max-width: 510px;
+  margin-bottom: 50px;
+  margin-right: 35px;
+  position: relative;
+}
+
+.hystory_Maria-img {
+  filter: drop-shadow(15px 15px 1px rgba(235, 245, 255, 1));
+}
+
+.hystory-underblock-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 90px 0 120px;
+}
+
+.hystory-underblock-second_text {
+  max-width: 620px;
+}
+
+.hystory-underblock-second_text h3 {
+  text-align: right;
+  color: rgba(120, 114, 185, 1);
+  margin-bottom: 5px;
+}
+
+.hystory-underblock-second_text p {
+  text-align: right;
+}
+
+.quote-Ivan:before {
+  content: url("../images/noun-quotation-mark-1569235 3.png");
+  left: -70px;
+  top: -15px;
+  position: absolute;
+}
+
+.quote-Ivan:after {
+  content: url("../images/noun-quotation-mark-1569235 4.png");
+  right: -50px;
+  bottom: -27px;
+  position: absolute;
+}
+
+.quote-Ivan {
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: left;
+  max-width: 470px;
+  margin-bottom: 50px;
+  position: relative;
+  margin-right: 60px;
+}
+
+.hystory_Ivan-img {
+  filter: drop-shadow(15px 15px 1px rgba(235, 245, 255, 1));
+}
