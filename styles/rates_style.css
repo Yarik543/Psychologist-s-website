@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: none;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2%;
+  background-color: rgba(249, 252, 255, 1);
+  color: rgba(77, 77, 82, 1);
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 44px;
+  color: rgba(120, 114, 185, 1);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 130%;
+  color: rgba(120, 114, 185, 1);
+  margin: 0 auto;
+  padding: auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1%;
+  color: rgba(77, 77, 82, 1);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: center;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: left;
+  color: rgba(77, 77, 82, 1);
+}
+
+h6 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: center;
+  color: rgba(120, 114, 185, 1);
+}
+
+button {
+  user-select: none;
+  display: block;
+}
+
+img {
+  user-select: none;
+}
+
+.burger-menu {
+  display: none;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/*Header*/
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+.menu a {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.88;
+  color: rgba(77, 77, 82, 1);
+  text-decoration: none;
+}
+
+#rates {
+  text-decoration: underline rgba(120, 114, 185, 1);
+  text-underline-offset: 10px;
+}
+
+.menu a:visited {
+  color: rgba(77, 77, 82, 1);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: rgba(120, 114, 185, 1);
+}
+
+.logo {
+  width: 170px;
+  height: 44px;
+  margin-left: 0;
+}
+
+.main-content {
+  min-height: 524px;
+}
+
+.button-login {
+  border: 2px rgba(120, 114, 185, 1) solid;
+  color: rgba(120, 114, 185, 1);
+  border-radius: 10px;
+  line-height: 140%;
+  font-weight: 600;
+  padding: 14px 35px;
+  text-decoration: none;
+  margin: 0;
+  user-select: none;
+}
+
+.button-login:hover {
+  background-color: rgb(240, 242, 245);
+}
+
+.main-info {
+  max-width: 640px;
+  padding-top: 17px;
+}
+
+/*Hero block*/
+.section-first .container {
+  padding: 91px 0 113px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-first h2 {
+  text-align: left;
+  margin: 16px 0 20px;
+}
+
+.section-first h3 {
+  text-align: left;
+  margin-bottom: 66px;
+}
+
+.btn-more-info {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(120, 114, 185, 1);
+  border-radius: 16px;
+  padding: 20px 90px;
+  box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .btn-more-info:hover {
+    box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
+  }
+}
