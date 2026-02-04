@@ -78,12 +78,11 @@ h4 {
 }
 
 h5 {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 140%;
-  letter-spacing: 1%;
-  text-align: left;
+  letter-spacing: 2%;
+  text-align: center;
   color: rgba(77, 77, 82, 1);
 }
 
@@ -100,6 +99,7 @@ h6 {
 button {
   user-select: none;
   display: block;
+  font-family: Montserrat, sans-serif;
 }
 
 img {
@@ -172,10 +172,6 @@ img {
   user-select: none;
 }
 
-.button-login:hover {
-  background-color: rgb(240, 242, 245);
-}
-
 .main-info {
   max-width: 640px;
   padding-top: 17px;
@@ -188,14 +184,17 @@ img {
   justify-content: space-between;
 }
 
-.section-first h2 {
+.section-first h1 {
   text-align: left;
   margin: 16px 0 20px;
+  max-width: 560px;
 }
 
 .section-first h3 {
   text-align: left;
+  margin: 0;
   margin-bottom: 66px;
+  max-width: 580px;
 }
 
 .btn-more-info {
@@ -208,13 +207,141 @@ img {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(120, 114, 185, 1);
   border-radius: 16px;
-  padding: 20px 90px;
+  padding: 20px 100px;
   box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
   transition: all 0.5s;
+}
+
+/*Блок 2 Тарифы*/
+.section-second {
+  padding: 110px 0 120px;
+  background-color: #fff;
+}
+
+.rates-container {
+  padding: 80px 0 70px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px 20px;
+}
+
+.rate-card {
+  background-color: #f9fcff;
+  border-radius: 15px;
+  text-align: center;
+  color: rgba(120, 114, 185, 1);
+}
+
+.rate-card h3,
+.rate-card h4,
+.rate-card h5 {
+  color: rgba(120, 114, 185, 1);
+}
+
+.rate-card h5:nth-child(2n) {
+  margin-bottom: 30px;
+}
+
+.rate-card-count_block {
+  border-radius: 15px 15px 0 0;
+  background-color: #ebf5ff;
+  padding: 16px 30px;
+  margin-bottom: 20px;
+}
+
+.rate-card-count_block h5 {
+  color: rgba(77, 77, 82, 1);
+}
+
+.btn-Payment {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 2%;
+  text-align: center;
+  padding: 10px 60px;
+  background-color: rgba(120, 114, 185, 1);
+  margin: 25px auto 20px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  border: none;
+  max-width: 220px;
+}
+
+.two {
+  margin-bottom: 95px;
+}
+
+.btn-Instalment {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 2%;
+  text-align: center;
+  padding: 13px 50px;
+  margin: 0px auto 25px;
+  background-color: rgba(241, 230, 247, 1);
+  color: rgba(77, 77, 82, 1);
+  border-radius: 10px;
+  border: none;
+}
+
+.textBox-input {
+  min-width: 310px;
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(120, 114, 185, 1);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  display: block;
+  margin: 0 auto 35px;
+}
+
+.textBox-input::placeholder {
+  color: rgba(120, 114, 185, 0.6);
+}
+
+.btn-Submit {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(120, 114, 185, 1);
+  border-radius: 16px;
+  padding: 18px 100px;
+  box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+  transition: all 0.5s;
+  display: block;
+  max-width: 310px;
+  margin: 0 auto;
 }
 
 @media (hover: hover) {
   .btn-more-info:hover {
     box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
+  }
+
+  .button-login:hover {
+    background-color: rgb(240, 242, 245);
+  }
+
+  .btn-Submit:hover {
+    box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
+  }
+
+  .btn-Payment:hover {
+    background-color: rgb(92, 87, 143);
+    cursor: pointer;
+  }
+
+  .btn-Instalment:hover {
+    background-color: rgb(216, 203, 224);
+    cursor: pointer;
   }
 }
