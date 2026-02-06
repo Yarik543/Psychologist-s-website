@@ -322,9 +322,243 @@ img {
   margin: 0 auto;
 }
 
+/*Блок 3*/
+.section-third {
+  padding: 120px 0 135px;
+}
+
+.section-third h2,
+.section-third h4 {
+  text-align: left;
+}
+
+.section-third h2 {
+  max-width: 680px;
+  margin: 0 0 35px;
+}
+
+.section-third h4 {
+  max-width: 440px;
+  font-weight: 600;
+}
+
+.application-points {
+  display: grid;
+  grid-template-columns: 40px 440px;
+  align-items: center;
+  gap: 45px 30px;
+  max-width: 510px;
+  margin-top: 45px;
+}
+
+.application-points p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1%;
+}
+
+.application-points p:first-of-type {
+  max-width: 330px;
+}
+
+.app-image-container {
+  display: flex;
+  gap: 111px;
+}
+
+.phones {
+  margin-top: 14px;
+  max-width: 393px;
+  max-height: 528px;
+}
+
+.btnDownload {
+  border-radius: 15px;
+  padding: 25px 70px;
+  border: none;
+  width: 380px;
+  height: 70px;
+  background-color: rgba(120, 114, 185, 1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 10px 15px 1px rgba(205, 225, 255, 1);
+  margin-top: 60px;
+  transition: box-shadow 0.5s;
+  display: block;
+  box-sizing: border-box;
+}
+
+.btnDownload,
+.btnDownload:visited,
+.btnDownload:hover,
+.btnDownload:active,
+.btnDownload:focus-visible {
+  text-decoration: none;
+  color: white;
+}
+
+/*Блок 4*/
+.section-fourth {
+  padding: 155px 0 120px;
+  background-color: #fff;
+}
+
+.container-referal_program {
+  background-color: rgba(249, 252, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 90px 80px;
+  margin-bottom: 120px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.referal-program_text-container h3 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.referal-program_text-container h2 {
+  text-align: left;
+}
+
+.referal-program_text-container h5 {
+  max-width: 480px;
+  margin-top: 20px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.illustration_rates {
+  position: absolute;
+  right: 60px;
+  top: -35px;
+}
+
+.container-steps_program {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 86px;
+}
+
+.container-steps_program h4 {
+  max-width: 240px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.step-rates {
+  max-width: 120px;
+  max-height: 135px;
+  display: block;
+  margin-inline: auto;
+}
+
+.noun-arrow-1-rates {
+  max-width: 134px;
+  max-height: 134px;
+}
+
+.noun-arrow-2-rates {
+  max-width: 137px;
+  max-height: 137px;
+}
+
+/*footer*/
+.footer {
+  padding-block: 80px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.footer .logo {
+  width: 180px;
+  height: 46px;
+}
+
+.logotypes-container {
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+  flex-wrap: wrap;
+  gap: 37px 30px;
+  margin-right: 20px;
+}
+
+.support-block a {
+  color: rgba(120, 114, 185, 1);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-decoration: none;
+}
+
+.support-block h6 {
+  text-align: left;
+  color: rgba(77, 77, 82, 1);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1%;
+  margin-bottom: 6px;
+  padding-top: 5px;
+}
+
+.youmiwork-mail {
+  display: block;
+  margin-bottom: 21px;
+}
+
+.about-block {
+  display: grid;
+  grid-template-columns: 150px;
+  gap: 24px;
+}
+
+.footer h5 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(120, 114, 185, 1);
+}
+
+.politic-block h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  color: rgba(77, 77, 82, 1);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
+  text-align: left;
+}
+
+.politic-block h6:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 @media (hover: hover) {
   .btn-more-info:hover {
     box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
+  }
+
+  .btnDownload:hover {
+    background-color: rgb(80, 76, 126);
+    cursor: pointer;
+    box-shadow: 3px 7px 1px rgba(205, 225, 255, 1);
   }
 
   .button-login:hover {
