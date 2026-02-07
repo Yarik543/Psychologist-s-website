@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: none;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -1272,6 +1273,8 @@ details[open] summary::after {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    padding-inline: 10px;
+    max-width: 100%;
   }
 
   .second-block .cards::-webkit-scrollbar {
