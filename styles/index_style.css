@@ -34,11 +34,26 @@ html {
   font-weight: 600;
 }
 
+:root {
+  /*Цвета*/
+  --color-purple: rgba(120, 114, 185, 1);
+  --color-white: #fff;
+  --color-skyBlue: rgba(249, 252, 255, 1);
+  --color-btnColor: rgba(255, 255, 255, 1);
+  --color-text: rgba(77, 77, 82, 1);
+  --color-btnRates: rgba(241, 230, 247, 1);
+  --color-btnRates-hover: rgba(215, 195, 230, 1);
+  --color-shadow: rgba(205, 225, 255, 1);
+  --color-dopElements: rgba(235, 245, 255, 1);
+  --color-btnLogin-hover: rgba(215, 195, 230, 0.25);
+  --color-redElements: rgba(250, 120, 140, 1);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2%;
-  background-color: rgba(249, 252, 255, 1);
-  color: rgba(77, 77, 82, 1);
+  background-color: var(--color-skyBlue);
+  color: var(--color-text);
   box-sizing: border-box;
 }
 
@@ -78,17 +93,13 @@ img {
   cursor: pointer;
   font-weight: 600;
   line-height: 1.88;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: none;
 }
 
 .menu a:visited {
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: none;
-}
-
-.menu a:hover {
-  color: rgba(120, 114, 185, 1);
 }
 
 .logo {
@@ -102,8 +113,8 @@ img {
 }
 
 .button-login {
-  border: 2px rgba(120, 114, 185, 1) solid;
-  color: rgba(120, 114, 185, 1);
+  border: 2px var(--color-purple) solid;
+  color: var(--color-purple);
   border-radius: 10px;
   line-height: 140%;
   font-weight: 600;
@@ -113,10 +124,6 @@ img {
   user-select: none;
 }
 
-.button-login:hover {
-  background-color: rgb(240, 242, 245);
-}
-
 .main-info {
   max-width: 640px;
   padding-top: 17px;
@@ -124,7 +131,7 @@ img {
 
 h1 {
   font-size: 44px;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   font-weight: 900;
 }
 
@@ -132,7 +139,7 @@ h2 {
   font-size: 40px;
   font-weight: 800;
   line-height: 130%;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   margin: 0 auto;
   padding: auto;
   text-align: center;
@@ -145,7 +152,7 @@ h3 {
   text-align: center;
   margin: 0 auto;
   letter-spacing: 1%;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
 }
 
 h4 {
@@ -163,7 +170,7 @@ h5 {
   line-height: 140%;
   letter-spacing: 1%;
   text-align: left;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
 }
 
 h6 {
@@ -173,7 +180,7 @@ h6 {
   line-height: 140%;
   letter-spacing: 1%;
   text-align: center;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 .h2-main {
@@ -182,7 +189,7 @@ h6 {
   font-weight: 600;
   line-height: 140%;
   margin: 10px 0 81px;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-align: left;
 }
 
@@ -191,8 +198,8 @@ h6 {
 }
 
 .btn-search {
-  background-color: rgba(120, 114, 185, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--color-purple);
+  color: var(--color-btnColor);
   font-size: 20px;
   font-weight: 600;
   line-height: 100%;
@@ -200,7 +207,7 @@ h6 {
   text-decoration: none;
   padding: 18px 80px;
   cursor: pointer;
-  box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+  box-shadow: 8px 10px 1px var(--color-shadow);
   user-select: none;
   transition: box-shadow 0.5s;
 }
@@ -233,7 +240,7 @@ h6 {
 
 .second-block {
   padding: 82px 0 100px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .second-block img {
@@ -254,7 +261,7 @@ h6 {
   margin-top: 190px;
   padding: 130px 0 44px;
   box-sizing: border-box;
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   text-align: center;
   border-radius: 20px;
   position: relative;
@@ -333,17 +340,17 @@ h6 {
 
 .white-element {
   border-radius: 40px;
-  border: 2px rgba(120, 114, 185, 1) solid;
+  border: 2px var(--color-purple) solid;
   text-align: center;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   list-style: none;
 }
 
 .purple-element {
   border-radius: 40px;
-  background-color: rgba(120, 114, 185, 1);
+  background-color: var(--color-purple);
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-btnColor);
 }
 
 .arrow {
@@ -401,7 +408,7 @@ h6 {
 
 /*Блок 4, преимущества*/
 .fourth-block {
-  background-color: #fff;
+  background-color: var(--color-white);
   padding-block: 100px;
 }
 
@@ -446,7 +453,7 @@ h6 {
 }
 
 .advantage {
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   border-radius: 20px;
 }
 
@@ -545,9 +552,9 @@ h6 {
 .anxiety {
   width: 480px;
   padding: 20px 60px 30px 40px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--color-btnColor);
   border-radius: 20px;
-  box-shadow: 8px 8px 1px rgba(205, 225, 255, 1);
+  box-shadow: 8px 8px 1px var(--color-shadow);
 }
 
 .anxiety h6 {
@@ -563,13 +570,13 @@ h6 {
 }
 
 .purple-ovals {
-  border: 1px solid rgba(120, 114, 185, 1);
+  border: 1px solid var(--color-purple);
   border-radius: 30px;
   height: 30px;
 }
 
 .blue-ovals {
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   border-radius: 30px;
   height: 30px;
 }
@@ -617,9 +624,9 @@ h6 {
   justify-content: space-around;
   align-items: center;
   gap: 30px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--color-btnColor);
   border-radius: 20px;
-  box-shadow: 8px 8px 1px rgba(205, 225, 255, 1);
+  box-shadow: 8px 8px 1px var(--color-shadow);
   width: 480px;
   padding: 28px 30px 26px;
 }
@@ -627,14 +634,14 @@ h6 {
 .line-underProfile {
   width: 80px;
   height: 10px;
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   border-radius: 30px;
   margin-inline: auto;
 }
 
 .profiles h6 {
   margin-block: 8px;
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   border-radius: 30px;
   width: 120px;
 }
@@ -697,9 +704,9 @@ h6 {
   display: flex;
   align-items: top;
   gap: 40px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--color-btnColor);
   border-radius: 20px;
-  box-shadow: 8px 8px 1px rgba(205, 225, 255, 1);
+  box-shadow: 8px 8px 1px var(--color-shadow);
   padding: 30px 50px 24px 30px;
 }
 
@@ -712,13 +719,13 @@ h6 {
 .day-of-calendar {
   width: 30px;
   height: 30px;
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   border-radius: 5px;
   margin: 0;
 }
 
 .red {
-  background-color: rgba(250, 120, 140, 1);
+  background-color: var(--color-redElements);
 }
 
 .third-step .line-underProfile {
@@ -728,7 +735,7 @@ h6 {
 .line-underProfile_small {
   width: 60px;
   height: 10px;
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   border-radius: 30px;
 }
 
@@ -751,9 +758,9 @@ h6 {
 }
 
 .themes {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--color-btnColor);
   border-radius: 20px;
-  box-shadow: 8px 8px 1px rgba(205, 225, 255, 1);
+  box-shadow: 8px 8px 1px var(--color-shadow);
   padding: 30px 40px 30px 30px;
   width: 410px;
 }
@@ -787,7 +794,7 @@ h6 {
 .line-blue {
   width: 150px;
   height: 10px;
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   border-radius: 20px;
 }
 
@@ -838,8 +845,8 @@ h6 {
 }
 
 .button_first_step {
-  background-color: rgba(120, 114, 185, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--color-purple);
+  color: var(--color-btnColor);
   border-radius: 15px;
   line-height: 100%;
   font-weight: 600;
@@ -850,17 +857,13 @@ h6 {
   text-align: center;
   margin: 0;
   cursor: pointer;
-  box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+  box-shadow: 8px 10px 1px var(--color-shadow);
   transition: box-shadow 0.5s;
 }
 
-.button_first_step:hover {
-  background-color: rgb(80, 76, 126);
-  box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
-}
 /*Блок 6*/
 .sixth-block {
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 120px 0 84px;
 }
 
@@ -869,7 +872,7 @@ h6 {
 }
 
 details {
-  background-color: rgba(235, 245, 255, 1);
+  background-color: var(--color-dopElements);
   padding: 30px 100px;
   margin-bottom: 30px;
   border-radius: 25px;
@@ -963,15 +966,15 @@ details[open] summary::after {
   border: none;
   width: 380px;
   height: 70px;
-  background-color: rgba(120, 114, 185, 1);
+  background-color: var(--color-purple);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 2%;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 10px 15px 1px rgba(205, 225, 255, 1);
+  color: var(--color-btnColor);
+  box-shadow: 10px 15px 1px var(--color-shadow);
   margin: 97px auto 0;
   transition: box-shadow 0.5s;
   display: block;
@@ -980,27 +983,20 @@ details[open] summary::after {
 
 .btnDownload,
 .btnDownload:visited,
-.btnDownload:hover,
 .btnDownload:active,
 .btnDownload:focus-visible {
   text-decoration: none;
   color: white;
 }
 
-.btnDownload:hover {
-  background-color: rgb(80, 76, 126);
-  cursor: pointer;
-  box-shadow: 3px 7px 1px rgba(205, 225, 255, 1);
-}
-
 /*Блок 8*/
 .eighth-block {
   padding-block: 120px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--color-btnColor);
 }
 
 .eighth-block .container {
-  background-color: rgba(249, 252, 255, 1);
+  background-color: var(--color-skyBlue);
   border-radius: 25px;
   text-align: left;
   padding: 55px 130px 72px 100px;
@@ -1068,7 +1064,7 @@ details[open] summary::after {
 }
 
 .support-block a {
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
@@ -1078,7 +1074,7 @@ details[open] summary::after {
 
 .support-block h6 {
   text-align: left;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 1%;
@@ -1101,7 +1097,7 @@ details[open] summary::after {
   text-align: left;
   font-size: 18px;
   font-weight: 600;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 .politic-block h6 {
@@ -1109,7 +1105,7 @@ details[open] summary::after {
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 1%;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-underline-offset: 2px;
@@ -1161,7 +1157,7 @@ details[open] summary::after {
     line-height: 140%;
     letter-spacing: 1%;
     text-align: left;
-    color: rgba(77, 77, 82, 1);
+    color: var(--color-text);
   }
 
   h6 {
@@ -1171,7 +1167,7 @@ details[open] summary::after {
     line-height: 140%;
     letter-spacing: 1%;
     text-align: center;
-    color: rgba(120, 114, 185, 1);
+    color: var(--color-purple);
   }
 
   .h2-main {
@@ -1250,7 +1246,25 @@ details[open] summary::after {
 
 @media (hover: hover) {
   .btn-search:hover {
-    background-color: rgb(80, 76, 126);
-    box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
+    box-shadow: 4px 5px 1px var(--color-shadow);
+  }
+
+  .menu a:hover {
+    color: var(--color-purple);
+  }
+
+  .button-login:hover {
+    background-color: var(--color-btnLogin-hover);
+  }
+
+  .button_first_step:hover {
+    box-shadow: 4px 5px 1px var(--color-shadow);
+  }
+
+  .btnDownload:hover {
+    cursor: pointer;
+    box-shadow: 3px 7px 1px var(--color-shadow);
+    text-decoration: none;
+    color: var(--color-white);
   }
 }

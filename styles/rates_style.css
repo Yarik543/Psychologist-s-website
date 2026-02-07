@@ -35,17 +35,34 @@ html {
   font-weight: 600;
 }
 
+:root {
+  /*Цвета*/
+  --color-purple: rgba(120, 114, 185, 1);
+  --color-white: #fff;
+  --color-skyBlue: rgba(249, 252, 255, 1);
+  --color-btnColor: rgba(255, 255, 255, 1);
+  --color-text: rgba(77, 77, 82, 1);
+  --color-btnRates: rgba(241, 230, 247, 1);
+  --color-btnRates-hover: rgba(215, 195, 230, 1);
+  --color-shadow: rgba(205, 225, 255, 1);
+  --color-dopElements: rgba(235, 245, 255, 1);
+  --color-btnMain-hover: rgb(80, 76, 126);
+  --color-btnLogin-hover: rgba(215, 195, 230, 0.25);
+
+  /**/
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2%;
-  background-color: rgba(249, 252, 255, 1);
-  color: rgba(77, 77, 82, 1);
+  background-color: var(--color-skyBlue);
+  color: var(--color-text);
   box-sizing: border-box;
 }
 
 h1 {
   font-size: 44px;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   font-weight: 900;
 }
 
@@ -53,7 +70,7 @@ h2 {
   font-size: 40px;
   font-weight: 800;
   line-height: 130%;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   margin: 0 auto;
   padding: auto;
   text-align: center;
@@ -66,7 +83,7 @@ h3 {
   text-align: center;
   margin: 0 auto;
   letter-spacing: 1%;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
 }
 
 h4 {
@@ -83,7 +100,7 @@ h5 {
   line-height: 140%;
   letter-spacing: 2%;
   text-align: center;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
 }
 
 h6 {
@@ -93,7 +110,7 @@ h6 {
   line-height: 140%;
   letter-spacing: 1%;
   text-align: center;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 button {
@@ -132,22 +149,22 @@ img {
   cursor: pointer;
   font-weight: 600;
   line-height: 1.88;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: none;
 }
 
 #rates {
-  text-decoration: underline rgba(120, 114, 185, 1);
+  text-decoration: underline var(--color-purple);
   text-underline-offset: 10px;
 }
 
 .menu a:visited {
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: none;
 }
 
 .menu a:hover {
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 .logo {
@@ -161,8 +178,8 @@ img {
 }
 
 .button-login {
-  border: 2px rgba(120, 114, 185, 1) solid;
-  color: rgba(120, 114, 185, 1);
+  border: 2px var(--color-purple) solid;
+  color: var(--color-purple);
   border-radius: 10px;
   line-height: 140%;
   font-weight: 600;
@@ -204,18 +221,18 @@ img {
   line-height: 100%;
   letter-spacing: 2%;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(120, 114, 185, 1);
+  color: var(--color-btnColor);
+  background-color: var(--color-purple);
   border-radius: 16px;
   padding: 20px 100px;
-  box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+  box-shadow: 8px 10px 1px var(--color-shadow);
   transition: all 0.5s;
 }
 
 /*Блок 2 Тарифы*/
 .section-second {
   padding: 110px 0 120px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .rates-container {
@@ -229,13 +246,13 @@ img {
   background-color: #f9fcff;
   border-radius: 15px;
   text-align: center;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 .rate-card h3,
 .rate-card h4,
 .rate-card h5 {
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 .rate-card h5:nth-child(2n) {
@@ -250,7 +267,7 @@ img {
 }
 
 .rate-card-count_block h5 {
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
 }
 
 .btn-Payment {
@@ -260,9 +277,9 @@ img {
   letter-spacing: 2%;
   text-align: center;
   padding: 10px 60px;
-  background-color: rgba(120, 114, 185, 1);
+  background-color: var(--color-purple);
   margin: 25px auto 20px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-btnColor);
   border-radius: 10px;
   border: none;
   max-width: 220px;
@@ -280,8 +297,8 @@ img {
   text-align: center;
   padding: 13px 50px;
   margin: 0px auto 25px;
-  background-color: rgba(241, 230, 247, 1);
-  color: rgba(77, 77, 82, 1);
+  background-color: var(--color-btnRates);
+  color: var(--color-text);
   border-radius: 10px;
   border: none;
 }
@@ -290,7 +307,7 @@ img {
   min-width: 310px;
   padding: 15px 30px;
   border-radius: 15px;
-  border: 2px solid rgba(120, 114, 185, 1);
+  border: 2px solid var(--color-purple);
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -311,11 +328,11 @@ img {
   line-height: 100%;
   letter-spacing: 2%;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(120, 114, 185, 1);
+  color: var(--color-btnColor);
+  background-color: var(--color-purple);
   border-radius: 16px;
   padding: 18px 100px;
-  box-shadow: 8px 10px 1px rgba(205, 225, 255, 1);
+  box-shadow: 8px 10px 1px var(--color-shadow);
   transition: all 0.5s;
   display: block;
   max-width: 310px;
@@ -379,15 +396,15 @@ img {
   border: none;
   width: 380px;
   height: 70px;
-  background-color: rgba(120, 114, 185, 1);
+  background-color: var(--color-purple);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 2%;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 10px 15px 1px rgba(205, 225, 255, 1);
+  color: var(--color-btnColor);
+  box-shadow: 10px 15px 1px var(--color-shadow);
   margin-top: 60px;
   transition: box-shadow 0.5s;
   display: block;
@@ -400,17 +417,17 @@ img {
 .btnDownload:active,
 .btnDownload:focus-visible {
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
 }
 
 /*Блок 4*/
 .section-fourth {
   padding: 155px 0 120px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .container-referal_program {
-  background-color: rgba(249, 252, 255, 1);
+  background-color: var(--color-skyBlue);
   display: flex;
   justify-content: space-between;
   padding: 80px 0 90px 80px;
@@ -498,7 +515,7 @@ img {
 }
 
 .support-block a {
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
@@ -508,7 +525,7 @@ img {
 
 .support-block h6 {
   text-align: left;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 1%;
@@ -531,7 +548,7 @@ img {
   text-align: left;
   font-size: 18px;
   font-weight: 600;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 .politic-block h6 {
@@ -539,7 +556,7 @@ img {
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 1%;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-underline-offset: 2px;
@@ -552,30 +569,29 @@ img {
 
 @media (hover: hover) {
   .btn-more-info:hover {
-    box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
+    box-shadow: 4px 5px 1px var(--color-shadow);
   }
 
   .btnDownload:hover {
-    background-color: rgb(80, 76, 126);
     cursor: pointer;
-    box-shadow: 3px 7px 1px rgba(205, 225, 255, 1);
+    box-shadow: 3px 7px 1px var(--color-shadow);
   }
 
   .button-login:hover {
-    background-color: rgb(240, 242, 245);
+    background-color: var(--color-btnLogin-hover);
   }
 
   .btn-Submit:hover {
-    box-shadow: 4px 5px 1px rgba(205, 225, 255, 1);
+    box-shadow: 4px 5px 1px var(--color-shadow);
   }
 
   .btn-Payment:hover {
-    background-color: rgb(92, 87, 143);
+    background-color: var(--color-btnMain-hover);
     cursor: pointer;
   }
 
   .btn-Instalment:hover {
-    background-color: rgb(216, 203, 224);
+    background-color: var(--color-btnRates-hover);
     cursor: pointer;
   }
 }

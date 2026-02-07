@@ -35,16 +35,32 @@ html {
   font-weight: 500;
 }
 
+:root {
+  /*Цвета*/
+  --color-purple: rgba(120, 114, 185, 1);
+  --color-white: #fff;
+  --color-skyBlue: rgba(249, 252, 255, 1);
+  --color-btnColor: rgba(255, 255, 255, 1);
+  --color-text: rgba(77, 77, 82, 1);
+  --color-btnRates: rgba(241, 230, 247, 1);
+  --color-btnRates-hover: rgba(215, 195, 230, 1);
+  --color-shadow: rgba(205, 225, 255, 1);
+  --color-dopElements: rgba(235, 245, 255, 1);
+  --color-btnLogin-hover: rgba(215, 195, 230, 0.25);
+
+  /**/
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2%;
-  background-color: rgba(249, 252, 255, 1);
-  color: rgba(77, 77, 82, 1);
+  background-color: var(--color-skyBlue);
+  color: var(--color-text);
 }
 
 h1 {
   font-size: 44px;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   font-weight: 900;
 }
 
@@ -52,7 +68,7 @@ h2 {
   font-size: 40px;
   font-weight: 800;
   line-height: 130%;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   margin: 0 auto;
   padding: auto;
   text-align: center;
@@ -65,7 +81,7 @@ h3 {
   text-align: center;
   margin: 0 auto;
   letter-spacing: 1%;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
 }
 
 h4 {
@@ -83,7 +99,7 @@ h5 {
   line-height: 140%;
   letter-spacing: 1%;
   text-align: left;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
 }
 
 h6 {
@@ -93,7 +109,7 @@ h6 {
   line-height: 140%;
   letter-spacing: 1%;
   text-align: center;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 button {
@@ -125,15 +141,15 @@ header .container {
   line-height: 140%;
   font-size: 16px;
   text-align: center;
-  color: rgba(120, 114, 185, 1);
-  border: 2px solid rgba(120, 114, 185, 1);
+  color: var(--color-purple);
+  border: 2px solid var(--color-purple);
   background-color: inherit;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
 
 .btnLogin:hover {
-  background-color: rgb(240, 242, 245);
+  background-color: var(--color-btnLogin-hover);
 }
 
 .menu {
@@ -146,21 +162,21 @@ header .container {
   cursor: pointer;
   font-weight: 600;
   line-height: 1.88;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: none;
 }
 
 .menu a:visited {
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: none;
 }
 
 .menu a:hover {
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 #about_us {
-  text-decoration: underline rgba(120, 114, 185, 1);
+  text-decoration: underline var(--color-purple);
   text-underline-offset: 10px;
 }
 
@@ -195,7 +211,7 @@ header .container {
 /*Блок 2*/
 .second-block {
   padding: 89px 0 120px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .second-block img {
@@ -242,7 +258,7 @@ header .container {
 
 /*Блок 3*/
 .third-block {
-  background-color: rgba(249, 252, 255, 1);
+  background-color: var(--color-skyBlue);
   padding-block: 80px;
 }
 
@@ -292,7 +308,7 @@ header .container {
 /*Блок 4*/
 .fourth-block {
   padding: 100px 0 120px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .fourth-block h2,
@@ -385,7 +401,7 @@ header .container {
 
 .hystory-underblock-first_text h3 {
   text-align: right;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   margin-bottom: 5px;
 }
 
@@ -435,7 +451,7 @@ header .container {
 
 .hystory-underblock-second_text h3 {
   text-align: right;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   margin-bottom: 5px;
 }
 
@@ -474,7 +490,7 @@ header .container {
 
 /*Блок 6*/
 .sixth-block {
-  background-color: #fff;
+  background-color: var(--color-white);
   padding-block: 120px;
 }
 
@@ -512,7 +528,7 @@ header .container {
 }
 
 .support-block a {
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
@@ -522,7 +538,7 @@ header .container {
 
 .support-block h6 {
   text-align: left;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 1%;
@@ -545,7 +561,7 @@ header .container {
   text-align: left;
   font-size: 18px;
   font-weight: 600;
-  color: rgba(120, 114, 185, 1);
+  color: var(--color-purple);
 }
 
 .politic-block h6 {
@@ -553,7 +569,7 @@ header .container {
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 1%;
-  color: rgba(77, 77, 82, 1);
+  color: var(--color-text);
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-underline-offset: 2px;
