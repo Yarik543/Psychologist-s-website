@@ -248,6 +248,12 @@ h6 {
   max-height: 220px;
 }
 
+/* slider controls hidden by default (desktop) */
+.second-block input[type="radio"],
+.slider-dots {
+  display: none;
+}
+
 .cards {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -1182,7 +1188,6 @@ details[open] summary::after {
   .container {
     max-width: 100%;
     margin-inline: 30px;
-    overflow: hidden;
   }
 
   /*1 блок и header*/
@@ -1241,6 +1246,106 @@ details[open] summary::after {
     max-width: 40px;
     max-height: 40px;
     bottom: 20px;
+  }
+
+  /*Блок 2*/
+  .second-block {
+    padding: 40px 0 45px;
+  }
+
+  .second-block img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  /* ===== SLIDER WITH SWIPE + RADIO (MOBILE ONLY) ===== */
+
+  .second-block input[type="radio"] {
+    display: none;
+  }
+
+  .second-block .cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .second-block .cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .second-block .card-info {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+
+  /* ===== DOTS ===== */
+
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .slider-dots label {
+    width: 10px;
+    height: 10px;
+    background-color: #dcdcf0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  /* active dot */
+  .slider-dots label.active {
+    background-color: var(--color-purple);
+  }
+
+  /**/
+
+  .card-info {
+    min-width: 300px;
+    min-height: 185px;
+    margin-top: 90px;
+    padding: 80px 0 30px;
+    box-sizing: border-box;
+    background-color: var(--color-dopElements);
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .card-info h3 {
+    margin-bottom: 8px;
+  }
+
+  .card-info:nth-child(2) h3 {
+    max-width: 200px;
+    margin-bottom: 8px;
+  }
+
+  .card-info:nth-child(2) {
+    min-height: 235px;
+  }
+
+  .image-second_block {
+    position: absolute;
+    left: 32%;
+    top: -60px;
+  }
+
+  .card-info p {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .card-info:nth-child(3) p {
+    max-width: 210px;
   }
 }
 
