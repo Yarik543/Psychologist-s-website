@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: none;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+:root {
+  /*Цвета*/
+  --color-purple: rgba(120, 114, 185, 1);
+  --color-white: #fff;
+  --color-skyBlue: rgba(249, 252, 255, 1);
+  --color-btnColor: rgba(255, 255, 255, 1);
+  --color-text: rgba(77, 77, 82, 1);
+  --color-btnRates: rgba(241, 230, 247, 1);
+  --color-btnRates-hover: rgba(215, 195, 230, 1);
+  --color-shadow: rgba(205, 225, 255, 1);
+  --color-dopElements: rgba(235, 245, 255, 1);
+  --color-btnLogin-hover: rgba(215, 195, 230, 0.25);
+
+  /**/
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2%;
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+h1 {
+  font-size: 44px;
+  color: var(--color-purple);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 130%;
+  color: var(--color-purple);
+  margin: 0 auto;
+  padding: auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1%;
+  color: var(--color-text);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: center;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: left;
+  color: var(--color-text);
+}
+
+h6 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-align: center;
+  color: var(--color-purple);
+}
+
+button {
+  user-select: none;
+  display: block;
+}
+
+img {
+  user-select: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.btnLogin {
+  padding: 14px 35px;
+  border-radius: 10px;
+  font-weight: 550;
+  line-height: 140%;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-purple);
+  border: 2px solid var(--color-purple);
+  background-color: inherit;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+.menu a {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.88;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.menu a:visited {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--color-purple);
+}
+
+#for_psychologists {
+  text-decoration: underline var(--color-purple);
+  text-underline-offset: 10px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/*Hero block*/
+.section-first .container {
+  padding: 90px 0 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-first h1 {
+  text-align: left;
+  margin: 23px 0 26px;
+  max-width: 701px;
+}
+
+.section-first h3 {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 58px;
+  max-width: 620px;
+}
+
+.btn-more-info {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: var(--color-btnColor);
+  background-color: var(--color-purple);
+  border-radius: 16px;
+  padding: 20px 50px;
+  box-shadow: 8px 10px 1px var(--color-shadow);
+  transition: all 0.5s;
+}
+
+/*Блок 2*/
+.section-second {
+  padding: 100px 0 135px;
+  background-color: var(--color-skyBlue);
+}
+
+.section-second h2 {
+  margin-bottom: 100px;
+}
+
+.container-advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 195px 0;
+}
+
+.container-advantages img {
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  max-width: 160px;
+}
+
+.card-advantage {
+  background-color: var(--color-white);
+  box-shadow: 10px 15px 1px var(--color-shadow);
+  border-radius: 20px;
+  padding: 140px 60px 80px;
+  min-width: 800px;
+  position: relative;
+}
+
+.card-advantage strong {
+  color: var(--color-purple);
+  font-weight: 600;
+}
+
+.card-advantage:nth-child(1) {
+  grid-column: 1/3;
+}
+
+.card-advantage:nth-child(2) {
+  grid-column: 2/4;
+}
+
+.card-advantage:nth-child(3) {
+  grid-column: 1/3;
+}
+
+.card-advantage:nth-child(4) {
+  grid-column: 2/4;
+}
+
+.card-advantage:nth-child(5) {
+  grid-column: 1/3;
+}
+
+.card-advantage h3 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.card-advantage p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1%;
+
+  max-width: 700px;
+}
+
+/*Медиа запросы*/
+@media (hover: hover) {
+  .btn-more-info:hover {
+    box-shadow: 4px 5px 1px var(--color-shadow);
+  }
+
+  .btnLogin:hover {
+    background-color: var(--color-btnLogin-hover);
+  }
+}
