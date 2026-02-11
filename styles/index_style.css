@@ -910,6 +910,7 @@ details summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0 160px;
   cursor: pointer;
 }
 
