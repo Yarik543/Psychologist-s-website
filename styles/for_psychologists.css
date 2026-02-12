@@ -580,6 +580,7 @@ details[open] summary::after {
 
 .container_text h3 {
   text-align: left;
+  font-weight: 500;
 }
 
 .btn-request {
@@ -599,6 +600,113 @@ details[open] summary::after {
   max-width: 360px;
   margin-inline: auto;
   margin-top: 90px;
+}
+
+/*Блок 7*/
+.section-seventh {
+  padding-block: 120px;
+}
+
+.section-seventh h3 {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.btn-mail-support {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: var(--color-purple);
+  border: 2px solid var(--color-purple);
+  border-radius: 16px;
+  padding: 20px 100px;
+  display: block;
+  max-width: 320px;
+  margin-inline: auto;
+  margin-top: 60px;
+}
+
+/*footer*/
+.footer {
+  padding-block: 80px;
+  background-color: var(--color-skyBlue);
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.footer .logo {
+  width: 180px;
+  height: 46px;
+}
+
+.logotypes-container {
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+  flex-wrap: wrap;
+  gap: 37px 30px;
+  margin-right: 20px;
+}
+
+.support-block a {
+  color: var(--color-purple);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  text-decoration: none;
+}
+
+.support-block h6 {
+  text-align: left;
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1%;
+  margin-bottom: 6px;
+  padding-top: 5px;
+}
+
+.youmiwork-mail {
+  display: block;
+  margin-bottom: 21px;
+}
+
+.about-block {
+  display: grid;
+  grid-template-columns: 150px;
+  gap: 24px;
+}
+
+.footer h5 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-purple);
+}
+
+.politic-block h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
+  text-align: left;
+}
+
+.politic-block h6:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 /*Медиа запросы*/
@@ -621,5 +729,9 @@ details[open] summary::after {
 
   .btn-request:hover {
     box-shadow: 4px 5px 1px var(--color-shadow);
+  }
+
+  .btn-mail-support:hover {
+    background-color: var(--color-btnLogin-hover);
   }
 }
