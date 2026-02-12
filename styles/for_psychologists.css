@@ -552,6 +552,55 @@ details[open] summary::after {
   margin-top: 90px;
 }
 
+/*Блок 6*/
+.section-sixth {
+  padding: 80px 0 95px;
+  background-color: var(--color-skyBlue);
+}
+
+.section-sixth .container {
+  position: relative;
+}
+
+.container-elements {
+  display: grid;
+  grid-template-columns: 782px 398px;
+}
+
+.psichologist-team_img {
+  position: absolute;
+  right: 0;
+  top: -145px;
+}
+
+.container_text h2 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.container_text h3 {
+  text-align: left;
+}
+
+.btn-request {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  color: var(--color-btnColor);
+  background-color: var(--color-purple);
+  border-radius: 16px;
+  padding: 20px 100px;
+  box-shadow: 8px 10px 1px var(--color-shadow);
+  transition: all 0.5s;
+  display: block;
+  max-width: 360px;
+  margin-inline: auto;
+  margin-top: 90px;
+}
+
 /*Медиа запросы*/
 @media (hover: hover) {
   .btn-more-info:hover {
@@ -567,6 +616,10 @@ details[open] summary::after {
   }
 
   .btn-more:hover {
+    box-shadow: 4px 5px 1px var(--color-shadow);
+  }
+
+  .btn-request:hover {
     box-shadow: 4px 5px 1px var(--color-shadow);
   }
 }
