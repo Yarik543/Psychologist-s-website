@@ -428,6 +428,12 @@ h6 {
   position: relative;
 }
 
+/* slider controls hidden by default (desktop) */
+.fourth-block input[type="radio"],
+.fourth-block .slider-dots {
+  display: none;
+}
+
 .fourth-block h2,
 .fourth-block h3,
 .fourth-block h4 {
@@ -1322,7 +1328,7 @@ details[open] summary::after {
     margin-top: 90px;
     padding: 80px 0 30px;
     box-sizing: border-box;
-    background-color: var(--color-dopElements);
+    background-color: var(--color-skyBlue);
     text-align: center;
     border-radius: 20px;
     position: relative;
@@ -1428,6 +1434,125 @@ details[open] summary::after {
 
   .marquee.reverse .marquee-track {
     animation: move-to-right 15s infinite linear;
+  }
+
+  /*Блок 4, преимущества*/
+  .fourth-block {
+    padding: 45px 0 40px;
+  }
+
+  .fourth-block h2 {
+    margin-bottom: 16px;
+    max-width: clamp(350px, 360px, 370px);
+  }
+
+  .fourth-block h3 {
+    margin-bottom: 10px;
+  }
+
+  #four-main-h4 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    margin-bottom: 45px;
+    max-width: 300px;
+  }
+
+  .line {
+    left: clamp(100px, 46%, 350px);
+    top: clamp(100px, 30.5vw, 160px);
+    width: 155px;
+    height: 6px;
+  }
+
+  .edu .advantage-details {
+    padding: 0;
+  }
+
+  .therapy .advantage-details {
+    padding: 0;
+  }
+
+  .advantage {
+    background-color: var(--color-skyBlue);
+    max-height: 153px;
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .advantage-flex {
+    display: block;
+  }
+
+  .advantage h3 {
+    text-align: center;
+  }
+
+  .advantage h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+    margin-top: 8px;
+    max-width: 240px;
+    margin-inline: auto;
+  }
+
+  .book {
+    display: none;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  /* ===== SLIDER 4 BLOCK (MOBILE ONLY) ===== */
+
+  .fourth-block input[type="radio"] {
+    display: none;
+  }
+
+  .fourth-block .card-advantages {
+    display: flex; /* вместо grid */
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x;
+    scrollbar-width: none;
+  }
+
+  .fourth-block .card-advantages::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fourth-block .advantage {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+  }
+
+  .fourth-block .slider-dots-Advantages {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .fourth-block .slider-dots-Advantages label {
+    width: 10px;
+    height: 10px;
+    background-color: #dcdcf0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .fourth-block .slider-dots-Advantages label.activeDot {
+    background-color: var(--color-purple);
   }
 }
 
