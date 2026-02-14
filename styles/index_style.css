@@ -1554,6 +1554,229 @@ details[open] summary::after {
   .fourth-block .slider-dots-Advantages label.activeDot {
     background-color: var(--color-purple);
   }
+
+  /*Блок 5*/
+  /*Блок 5 - шаги терапии*/
+  .fifth-block {
+    padding: 40px 0 60px;
+  }
+
+  .text-block-1 h3 {
+    text-align: center;
+  }
+
+  .fifth-block p {
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+  }
+
+  .first-step {
+    display: block;
+    margin: 40px 0 48px;
+  }
+
+  .text-number-1 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    max-width: calc(100% - 30px);
+    margin-inline: auto;
+  }
+
+  .text-block-1 p {
+    margin-top: 8px;
+  }
+
+  .number-1 {
+    width: 25px;
+    height: 50px;
+    margin-inline: auto;
+  }
+
+  .circle-1 {
+    left: 125px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .anxiety {
+    display: none;
+  }
+
+  /*Второй подблок*/
+  .second-step {
+    display: block;
+    margin-bottom: 51px;
+  }
+
+  /*Профили*/
+  .profiles {
+    display: none;
+  }
+
+  /*Текстовый блок*/
+  .text-number-2 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 32px 0;
+    max-width: calc(100% - 30px);
+    margin-inline: auto;
+  }
+
+  .text-number-2 p {
+    font-size: 14px;
+    max-width: clamp(136px, 280px, 380px);
+  }
+
+  .number-2 {
+    width: 44px;
+    height: 50px;
+    margin-inline: auto;
+  }
+
+  .circle-2 {
+    left: 125px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .text-block-2 {
+    margin-inline: auto;
+  }
+
+  .text-block-2 h3 {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  /*Подблок 3*/
+  .third-step {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .text-number-3 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 31px 0;
+    max-width: calc(100% - 30px);
+    margin-inline: auto;
+  }
+
+  .text-block-3 {
+    margin-inline: auto;
+  }
+
+  .text-number-3 p {
+    max-width: clamp(136px, 280px, 380px);
+  }
+
+  .number-3 {
+    width: 45px;
+    height: 50px;
+    margin-inline: auto;
+  }
+
+  .circle-3 {
+    left: 125px;
+    top: 0;
+    width: 50px;
+    height: 52px;
+  }
+
+  .text-block-3 h3 {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .calendar {
+    display: none;
+  }
+
+  /*Подблок 4*/
+  .four-step {
+    display: block;
+    margin-bottom: 51px;
+  }
+
+  .themes {
+    display: none;
+  }
+
+  .text-number-4 {
+    flex-flow: row wrap;
+    gap: 30px 0;
+    max-width: calc(100% - 30px);
+    margin-inline: auto;
+  }
+
+  .text-number-4 h3 {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .number-4 {
+    width: 42px;
+    height: 50px;
+    margin-inline: auto;
+  }
+
+  .circle-4 {
+    left: 125px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+  }
+  /*Подблок 5 с кнопкой*/
+  .five-button-step {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+  }
+
+  .number-5 {
+    width: 50px;
+    height: 50px;
+    margin-inline: auto;
+    display: block;
+  }
+
+  .text-number-5 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px 1000px;
+    max-width: calc(100% - 30px);
+    margin-inline: auto;
+  }
+
+  .text-block-5 {
+    margin-inline: auto;
+  }
+
+  .text-number-5 p {
+    max-width: clamp(136px, 215px, 380px);
+  }
+
+  .circle-5 {
+    top: 0;
+    left: 125px;
+    width: 54px;
+    height: 52px;
+  }
+
+  .button_first_step {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    width: calc(100% - 55px);
+    padding: 18px 25px;
+  }
 }
 
 @media (hover: hover) {
