@@ -1239,13 +1239,16 @@ details[open] summary::after {
   }
 
   .btn {
-    max-width: 290;
-    max-height: 50;
     border-radius: 10px;
     padding: 17px 70px;
     letter-spacing: 2%;
     text-align: center;
     display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
   }
 
   .text {
@@ -1776,6 +1779,76 @@ details[open] summary::after {
     text-align: center;
     width: calc(100% - 55px);
     padding: 18px 25px;
+  }
+
+  /*Блок 6*/
+  .sixth-block {
+    padding: 50px 0 60px;
+  }
+
+  .btn-more-question {
+    display: block;
+    background-color: var(--color-purple);
+    color: var(--color-btnColor);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    padding-block: 18px 22px;
+    box-shadow: 8px 10px 1px var(--color-shadow);
+    user-select: none;
+    margin-top: 40px;
+  }
+
+  details {
+    background-color: var(--color-skyBlue);
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  details p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    max-width: 260px;
+    margin-top: 8px;
+  }
+
+  .quetion1 {
+    margin-top: 40px;
+  }
+
+  .quetion3,
+  .quetion5,
+  .quetion6 {
+    display: none;
+  }
+
+  details summary {
+    gap: 0 30px;
+  }
+
+  details summary h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 1%;
+  }
+
+  summary::after {
+    content: url("../images/plus.png");
+    width: 30px;
+    height: 30px;
+  }
+
+  details[open] summary::after {
+    content: url("../images/minus.png");
+    width: 30px;
+    height: 30px;
   }
 }
 
