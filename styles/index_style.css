@@ -1779,6 +1779,7 @@ details[open] summary::after {
     text-align: center;
     width: calc(100% - 55px);
     padding: 18px 25px;
+    border-radius: 12px;
   }
 
   /*Блок 6*/
@@ -1797,7 +1798,7 @@ details[open] summary::after {
     text-align: center;
     border-radius: 12px;
     text-decoration: none;
-    padding-block: 18px 22px;
+    padding: 18px 22px;
     box-shadow: 8px 10px 1px var(--color-shadow);
     user-select: none;
     margin-top: 40px;
@@ -1850,8 +1851,79 @@ details[open] summary::after {
     width: 30px;
     height: 30px;
   }
+
+  /*Блок 7*/
+  .seventh-block {
+    padding: 40px 0 60px;
+  }
+
+  .seventh-block h2,
+  .seventh-block h4 {
+    text-align: left;
+  }
+
+  .seventh-block h2 {
+    max-width: clamp(200px, 340px, 450px);
+    margin-bottom: 10px;
+  }
+
+  .seventh-block h4 {
+    max-width: clamp(200px, 340px, 450px);
+    font-weight: 500;
+  }
+
+  .application-points {
+    display: grid;
+    grid-template-columns: 20px 300px;
+    align-items: center;
+    gap: 35px 20px;
+    max-width: 100%;
+    margin-top: 36px;
+  }
+
+  .application-points img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  .application-points p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+  }
+
+  .app-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px 0px;
+  }
+
+  .phones {
+    max-width: 229px;
+    height: 302px;
+  }
+
+  .btnDownload {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: auto 72px;
+    user-select: none;
+    margin-top: 50px;
+    margin-inline: auto;
+    width: fit-content;
+  }
 }
 
+/*Медиа hover*/
 @media (hover: hover) {
   .btn-search:hover {
     box-shadow: 4px 5px 1px var(--color-shadow);
