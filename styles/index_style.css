@@ -1920,7 +1920,7 @@ details[open] summary::after {
     user-select: none;
     margin-top: 50px;
     margin-inline: auto;
-    width: fit-content;
+    width: 100%;
   }
 }
 
