@@ -148,6 +148,10 @@ header .container {
   cursor: pointer;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .btnLogin:hover {
   background-color: var(--color-btnLogin-hover);
 }
@@ -578,4 +582,121 @@ header .container {
 
 .politic-block h6:not(:last-child) {
   margin-bottom: 20px;
+}
+
+/*Адаптив*/
+@media (max-width: 480px) {
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+  }
+
+  h5 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: left;
+    color: var(--color-text);
+  }
+
+  h6 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: var(--color-purple);
+  }
+
+  .container {
+    max-width: 100%;
+    margin-inline: 30px;
+  }
+
+  /*1 блок и header*/
+  .menu,
+  .btnLogin {
+    display: none;
+  }
+
+  header .container {
+    padding-top: 28px;
+  }
+
+  .logo {
+    max-width: 100px;
+    max-height: 26px;
+  }
+
+  .burger-menu {
+    display: block;
+    width: 30px;
+    height: 22px;
+  }
+
+  .hero-block {
+    padding: 47px 0 50px;
+  }
+
+  .hero-block .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-block-text {
+    position: relative;
+    margin-inline: auto;
+  }
+
+  .hero-block-picture {
+    width: 199px;
+    height: 170px;
+    margin-inline: auto;
+    margin-top: 41px;
+  }
+
+  .hero-block-text h1:nth-child(1) {
+    margin-bottom: 13px;
+    text-align: center;
+  }
+
+  .ellipse-hero {
+    position: absolute;
+    left: -7px;
+    bottom: -6px;
+    width: 112px;
+    height: 45px;
+  }
 }
