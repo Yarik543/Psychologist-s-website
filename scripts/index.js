@@ -1,3 +1,4 @@
+/*Страница главная*/
 const cards = document.querySelector(".second-block .cards");
 const dots = document.querySelectorAll(".slider-dots label");
 const radios = document.querySelectorAll(
