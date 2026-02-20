@@ -1313,7 +1313,7 @@ details[open] summary::after {
   .slider-dots {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     margin-top: 20px;
   }
 
@@ -1549,7 +1549,7 @@ details[open] summary::after {
   .fourth-block .slider-dots-Advantages {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     margin-top: 20px;
   }
 

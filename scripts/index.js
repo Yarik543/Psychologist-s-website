@@ -5,7 +5,7 @@ const radios = document.querySelectorAll(
     '.second-block input[type="radio"]',
 );
 
-function setActive(index) {
+let setActive = (index) => {
     dots.forEach((dot, i) => {
         dot.classList.toggle("active", i === index);
         radios[i].checked = i === index;
