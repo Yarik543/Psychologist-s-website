@@ -1063,4 +1063,31 @@ header .container {
     filter: drop-shadow(10px 10px 1px rgba(235, 245, 255, 1));
     width: 120px;
   }
+
+  /*Блок 6*/
+  .sixth-block {
+    padding-block: 50px;
+  }
+
+  .sixth-block .container {
+    margin-inline: 0;
+  }
+
+  .company-logo-container {
+    display: flex;
+    gap: 38px;
+    margin-top: 40px;
+    animation: companyLogoStroke 10s infinite linear;
+    width: max-content;
+  }
+
+  .company-logo-container img {
+    height: 20px;
+  }
+
+  @keyframes companyLogoStroke {
+    to {
+      translate: -50%;
+    }
+  }
 }
