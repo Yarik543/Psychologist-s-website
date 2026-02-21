@@ -275,6 +275,10 @@ header .container {
   padding-block: 80px;
 }
 
+.slider-arrow {
+  display: none;
+}
+
 .third-block .container {
   position: relative;
 }
@@ -321,6 +325,10 @@ header .container {
 .fourth-block {
   padding: 100px 0 120px;
   background-color: var(--color-white);
+}
+
+.fourth-block input[type="radio"] {
+  display: none;
 }
 
 .fourth-block h2,
@@ -842,16 +850,120 @@ header .container {
     top: calc(120px + 41px + 60px);
     width: 20px;
     height: 20px;
-    z-index: 10;
+    user-select: none;
   }
 
   .slider-prev {
     left: 0;
-    user-select: none;
   }
 
   .slider-next {
     right: 0;
-    user-select: none;
+  }
+
+  /*Блок 4, преимущества*/
+  .fourth-block {
+    padding-block: 50px;
+  }
+
+  .fourth-block h2 {
+    margin-bottom: 30px;
+    max-width: clamp(350px, 360px, 370px);
+  }
+
+  .main_h3 {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 13px;
+    max-width: clamp(200px, 300px, 370px);
+  }
+
+  .edu .advantage-details {
+    padding: 0;
+  }
+
+  .therapy .advantage-details {
+    padding: 0;
+  }
+
+  .advantage {
+    background-color: var(--color-skyBlue);
+    max-height: 153px;
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .advantage-flex {
+    display: block;
+  }
+
+  .advantage h3 {
+    text-align: center;
+  }
+
+  .advantage h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+    margin-top: 8px;
+    margin-inline: auto;
+  }
+
+  .book {
+    display: none;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  /* ===== SLIDER 4 BLOCK (MOBILE ONLY) ===== */
+
+  .fourth-block input[type="radio"] {
+    display: none;
+  }
+
+  .fourth-block .card-advantages {
+    display: flex; /* вместо grid */
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x;
+    scrollbar-width: none;
+    margin-top: 0;
+  }
+
+  .fourth-block .card-advantages::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fourth-block .advantage {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+
+  .fourth-block .slider-dots-Advantages {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .fourth-block .slider-dots-Advantages label {
+    width: 10px;
+    height: 10px;
+    background-color: #dcdcf0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .fourth-block .slider-dots-Advantages label.activeDot {
+    background-color: var(--color-purple);
   }
 }
