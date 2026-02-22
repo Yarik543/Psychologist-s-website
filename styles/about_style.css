@@ -154,10 +154,10 @@ header .container {
   cursor: pointer;
 }
 
+.burger-panel,
 .burger-menu {
   display: none;
 }
-
 .btnLogin:hover {
   background-color: var(--color-btnLogin-hover);
 }
@@ -522,6 +522,10 @@ header .container {
   margin-top: 95px;
 }
 
+.dublicate-logo {
+  display: none;
+}
+
 /*footer*/
 .footer {
   padding-block: 80px;
@@ -546,6 +550,10 @@ header .container {
   flex-wrap: wrap;
   gap: 37px 30px;
   margin-right: 20px;
+}
+
+.logotypes-container-mobile {
+  display: none;
 }
 
 .support-block a {
@@ -1073,6 +1081,11 @@ header .container {
     margin-inline: 0;
   }
 
+  .dublicate-logo {
+    display: flex;
+    gap: 38px;
+  }
+
   .company-logo-container {
     display: flex;
     gap: 38px;
@@ -1168,5 +1181,101 @@ header .container {
 
   .politic-block h6 {
     font-size: 14px;
+  }
+
+  /* ===== BURGER MENU ===== */
+
+  .burger-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 90;
+  }
+
+  #about_us {
+    color: var(--color-purple);
+    text-decoration: none;
+  }
+
+  .burger-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    max-width: 320px;
+    height: 100%;
+    background: var(--color-white);
+    padding: 30px 25px 40px 30px;
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger_logo {
+    width: 100px;
+  }
+
+  .cross_burger {
+    width: 24px;
+    height: 24px;
+  }
+
+  .burger-close {
+    border: none;
+    background: none;
+  }
+
+  .burger-list {
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 226px;
+  }
+
+  .burger-list li {
+    margin-bottom: 15px;
+  }
+
+  .inputButton_container li {
+    margin-bottom: 0;
+  }
+
+  .burger-list a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2%;
+    color: var(--color-text);
+  }
+
+  .inputButton_container {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .arrow_burger {
+    width: 24px;
+  }
+
+  /* ACTIVE */
+
+  .burger-panel.active {
+    right: 0;
+  }
+
+  .burger-overlay.active {
+    opacity: 1;
+    visibility: visible;
   }
 }

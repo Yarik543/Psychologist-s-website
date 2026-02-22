@@ -123,6 +123,7 @@ img {
   user-select: none;
 }
 
+.burger-panel,
 .burger-menu {
   display: none;
 }
@@ -565,6 +566,294 @@ img {
 
 .politic-block h6:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+  }
+
+  h5 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: left;
+    color: var(--color-text);
+  }
+
+  h6 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: var(--color-purple);
+  }
+
+  .container {
+    max-width: 100%;
+    margin-inline: 30px;
+  }
+
+  /*1 блок и header*/
+  .menu,
+  .button-login {
+    display: none;
+  }
+
+  /*Header*/
+  .header .container {
+    padding-top: 28px;
+  }
+
+  /*Hero block*/
+  .section-first .container {
+    padding: 48px 0 50px;
+    flex-wrap: wrap;
+  }
+
+  .section-first h1 {
+    margin-bottom: 10px;
+    max-width: 560px;
+  }
+
+  .section-first h3 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+
+  .btn-more-info {
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 20px 30px;
+    max-width: 100%;
+    display: block;
+  }
+
+  .rates_main_img {
+    width: 220px;
+    margin-top: 45px;
+    display: block;
+    margin-inline: auto;
+  }
+
+  .logo {
+    max-width: 100px;
+    max-height: 26px;
+  }
+
+  .burger-menu {
+    display: block;
+    width: 30px;
+    height: 22px;
+  }
+
+  /*footer*/
+  .footer {
+    padding-block: 40px;
+  }
+
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px 20px;
+  }
+
+  .logotypes-container {
+    display: block;
+    grid-column: 1/3;
+  }
+
+  .logotypes-container-mobile {
+    grid-column: 1/3;
+    display: flex;
+    gap: 0 30px;
+    order: 4;
+  }
+
+  .logotypes-container-mobile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer .logo {
+    width: 100px;
+    height: 26px;
+  }
+
+  .vk-logo,
+  .tg-logo,
+  .dzen-logo {
+    display: none;
+  }
+
+  .support-block {
+    order: 3;
+    grid-column: 1/3;
+  }
+
+  .support-block a {
+    font-size: 16px;
+  }
+
+  .support-block h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .youmiwork-mail {
+    margin-bottom: 20px;
+  }
+
+  .about-block {
+    display: grid;
+    grid-template-columns: 150px;
+    gap: 20px;
+  }
+
+  .footer h5 {
+    font-size: 16px;
+  }
+
+  .politic-block {
+    order: 5;
+    grid-column: 1/3;
+  }
+
+  .politic-block h6 {
+    font-size: 14px;
+  }
+
+  /* ===== BURGER MENU ===== */
+
+  .burger-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 90;
+  }
+
+  #rates {
+    color: var(--color-purple);
+    text-decoration: none;
+  }
+
+  .burger-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    max-width: 320px;
+    height: 100%;
+    background: var(--color-white);
+    padding: 30px 25px 40px 30px;
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger_logo {
+    width: 100px;
+  }
+
+  .cross_burger {
+    width: 24px;
+    height: 24px;
+  }
+
+  .burger-close {
+    border: none;
+    background: none;
+  }
+
+  .burger-list {
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 226px;
+  }
+
+  .burger-list li {
+    margin-bottom: 15px;
+  }
+
+  .inputButton_container li {
+    margin-bottom: 0;
+  }
+
+  .burger-list a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2%;
+    color: var(--color-text);
+  }
+
+  .inputButton_container {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .arrow_burger {
+    width: 24px;
+  }
+
+  /* ACTIVE */
+
+  .burger-panel.active {
+    right: 0;
+  }
+
+  .burger-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 @media (hover: hover) {
