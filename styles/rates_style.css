@@ -340,6 +340,11 @@ img {
   margin: 0 auto;
 }
 
+/*Слайдер тарифы*/
+.slider_arrow {
+  display: none;
+}
+
 /*Блок 3*/
 .section-third {
   padding: 120px 0 135px;
@@ -678,6 +683,177 @@ img {
     display: block;
     width: 30px;
     height: 22px;
+  }
+
+  /*Блок 2 Тарифы*/
+  .section-second {
+    padding: 50px 0 60px;
+    position: relative;
+  }
+
+  .rates-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x;
+    scrollbar-width: none;
+    max-width: 100%;
+    padding: 30px 0 35px;
+    gap: 40px;
+    padding-inline: calc((100% - 85%) / 2);
+  }
+
+  .rate-card {
+    min-height: 362px;
+    text-align: center;
+    position: relative;
+    flex: 0 0 95%;
+    scroll-snap-align: center;
+    min-width: unset;
+    margin-inline: auto;
+  }
+
+  .rate-card h3,
+  .rate-card h4,
+  .rate-card h5 {
+    text-align: center;
+  }
+
+  .rate-card h4 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .rate-card h3 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #economy-h5 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .rate-card-count_block h5 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .btn-Payment {
+    font-size: 16px;
+    max-width: 200px;
+  }
+
+  .btn-Instalment {
+    font-size: 16px;
+    width: 200px;
+    display: block;
+    padding: 14px 0;
+    margin-bottom: 20px;
+  }
+
+  .textBox-input {
+    width: 200px;
+    padding: 15px;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .btn-Submit {
+    font-size: 16px;
+    max-width: 310px;
+    margin: 0 auto;
+  }
+
+  /*Блок 7*/
+  .section-third {
+    padding: 40px 0 60px;
+  }
+
+  .section-third h2,
+  .section-third h4 {
+    text-align: left;
+  }
+
+  .section-third h2 {
+    max-width: clamp(200px, 340px, 450px);
+    margin-bottom: 10px;
+  }
+
+  .section-third h4 {
+    max-width: clamp(200px, 340px, 450px);
+    font-weight: 500;
+  }
+
+  .application-points {
+    display: grid;
+    grid-template-columns: 20px 300px;
+    align-items: center;
+    gap: 35px 20px;
+    max-width: 100%;
+    margin-top: 36px;
+  }
+
+  .application-points img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  .application-points p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+  }
+
+  .app-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px 0px;
+  }
+
+  .phones {
+    max-width: 229px;
+    height: 302px;
+  }
+
+  .btnDownload {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    height: 55px;
+    padding: 18px 22px 0;
+    user-select: none;
+    margin-top: 50px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  /*Слайдер тарифы*/
+  .slider_arrow {
+    display: block;
+    position: absolute;
+    top: 41%;
+  }
+
+  .slider_left_arrow {
+    left: 6%;
+  }
+
+  .slider_right_arrow {
+    right: 6%;
   }
 
   /*footer*/
