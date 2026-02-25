@@ -9,7 +9,7 @@ burgerBtn.addEventListener("click", () => {
     burgerOverlay.classList.add("active");
 });
 
-function closeBurger() {
+const closeBurger = () => {
     burgerPanel.classList.remove("active");
     burgerOverlay.classList.remove("active");
 }
