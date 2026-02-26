@@ -661,6 +661,10 @@ details[open] summary::after {
   margin-right: 20px;
 }
 
+.logotypes-container-mobile {
+  display: none;
+}
+
 .support-block a {
   color: var(--color-purple);
   font-weight: 600;
@@ -828,6 +832,54 @@ details[open] summary::after {
     height: 179px;
     display: block;
     margin: 50px auto 0;
+  }
+
+  /*Блок 2*/
+  .section-second {
+    padding: 50px 0 60px;
+  }
+
+  .section-second h2 {
+    margin-bottom: 100px;
+  }
+
+  .container-advantages {
+    grid-template-columns: 300px;
+    gap: 100px 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-advantages img {
+    top: -60px;
+    left: 30%;
+    max-width: 120px;
+  }
+
+  .card-advantage {
+    padding: 80px 20px 30px;
+    min-width: 100px;
+    box-shadow: 5px 10px 1px var(--color-shadow);
+  }
+
+  .card-advantage strong {
+    font-weight: 700;
+  }
+
+  .card-advantage:nth-child(1n - 5) {
+    grid-column: 1/1;
+  }
+
+  .card-advantage h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .card-advantage p {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
   }
 
   /*footer*/
