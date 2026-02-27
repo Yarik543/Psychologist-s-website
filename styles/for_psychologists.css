@@ -977,6 +977,190 @@ details[open] summary::after {
     background-color: var(--color-purple);
   }
 
+  /*Блок 4*/
+  .section-fourth {
+    padding: 50px 0 60px;
+  }
+
+  .section-fourth h2 {
+    margin-bottom: 50px;
+  }
+
+  .container-steps {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 50px 0;
+    position: static;
+    margin-bottom: 40px;
+  }
+
+  .step-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 10px;
+  }
+
+  .step_text-container p {
+    font-size: 14px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .one .step_text-container p,
+  .one .step_text-container h3,
+  .two .step_text-container p,
+  .two .step_text-container h3,
+  .three .step_text-container p,
+  .three .step_text-container h3,
+  .four .step_text-container p,
+  .four .step_text-container h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .step_text-container h3 {
+    margin-bottom: 8px;
+  }
+
+  .step-number_img {
+    height: 50px;
+  }
+
+  .circle-img {
+    left: 42%;
+    top: 3px;
+    max-width: 50px;
+  }
+
+  .noun-arrow-3,
+  .noun-arrow-2,
+  .noun-arrow-down {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    grid-column: 1/1;
+    max-width: 100%;
+  }
+
+  .btn-connect {
+    font-size: 16px;
+    padding: 20px 0;
+    box-shadow: 5px 10px 1px var(--color-shadow);
+    max-width: 100%;
+  }
+
+  /*Блок 5*/
+  .section-fifth {
+    padding: 50px 0 60px;
+  }
+
+  .btn-more {
+    font-size: 16px;
+    padding: 18px 22px;
+    margin-top: 40px;
+  }
+
+  details {
+    background-color: var(--color-skyBlue);
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  details p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    max-width: 260px;
+    margin-top: 8px;
+  }
+
+  .questions-container {
+    margin-top: 40px;
+  }
+
+  .quetion3,
+  .quetion5,
+  .quetion6 {
+    display: none;
+  }
+
+  details summary {
+    gap: 0 30px;
+    font-size: 16px;
+  }
+
+  details summary h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 1%;
+  }
+
+  summary::after {
+    content: url("../images/plus.png");
+    width: 30px;
+    height: 30px;
+  }
+
+  details[open] summary::after {
+    content: url("../images/minus.png");
+    width: 30px;
+    height: 30px;
+  }
+
+  /*Блок 6*/
+  .section-sixth {
+    padding: 50px 0 60px;
+  }
+
+  .container-elements {
+    grid-template-columns: 100%;
+  }
+
+  .psichologist-team_img {
+    position: static;
+    width: 120px;
+    display: block;
+    margin-inline: auto;
+    margin-top: 30px;
+  }
+
+  .container_text h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .container_text h3 {
+    text-align: center;
+  }
+
+  .btn-request {
+    font-size: 16px;
+    padding: 18px 22px;
+    margin-top: 40px;
+  }
+
+  /*Блок 7*/
+  .section-seventh {
+    padding-block: 60px;
+  }
+
+  .section-seventh h3 {
+    margin-top: 10px;
+  }
+
+  .btn-mail-support {
+    font-size: 16px;
+    padding: 18px 22px;
+    margin-top: 40px;
+    width: calc(100% - 40px);
+  }
+
   /*footer*/
   .footer {
     padding-block: 40px;
