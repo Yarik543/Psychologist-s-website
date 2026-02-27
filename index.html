@@ -1,56 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/icon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable= no, initial-scale=1.0, maximum-scale = 1.0, minimum-scale = 1.0"
+    />
+    <link rel="stylesheet" href="styles/index_style.css" />
+    <link rel="icon" href="images/logo_browser.png" />
     <title>Психолог онлайн</title>
   </head>
   <body>
     <main class="main">
-      <div class="main-container">
+      <header id="header" class="header">
         <div class="container">
-          <header class="header">
-            <div class="logo">
-              <img src="images/logo youmi 2.png" alt="Logo" class="logo" />
-            </div>
-            <nav>
-              <ul class="menu">
-                <li>О нас</li>
-                <li>Тарифы</li>
-                <li>Психологам</li>
-                <li>Материалы</li>
-              </ul>
-            </nav>
-            <a href="#" class="button">Личный кабинет</a>
-          </header>
+          <a href="index.html">
+            <img src="images/logo youmi 2.png" alt="logo" class="logo" />
+          </a>
+          <nav>
+            <ul class="menu">
+              <li><a href="about_us.html">О нас</a></li>
+              <li><a href="rates.html">Тарифы</a></li>
+              <li><a href="for_psychologists.html">Психологам</a></li>
+              <li><a>Материалы</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="button-login">Личный кабинет</a>
+          <img src="images/menu.png" alt="burger-menu" class="burger-menu" />
+        </div>
+      </header>
+      <!-- overlay -->
+      <div class="burger-overlay" id="burgerOverlay"></div>
+
+      <!-- mobile menu -->
+      <nav class="burger-panel" id="burgerPanel">
+        <div class="burger-panel-header">
+          <img
+            src="images/logo youmi 2.png"
+            alt="logo"
+            class="burger_logo"
+            href="index.html"
+          />
+          <button class="burger-close" id="burgerClose">
+            <img src="images/cross_burger.png" class="cross_burger" />
+          </button>
         </div>
 
-        <section class="main-content">
-          <div class="container">
-            <div class="main-info">
-              <h1>Вместе мы справимся</h1>
-              <h2 class="h2-main">Найдите своего психолога онлайн</h2>
-              <a href="#search" class="btn-search">Найти психолога</a>
-              <p class="text">2770 руб. за 50 минут сессии</p>
-            </div>
-            <div class="main-image">
-              <img src="images/illustration 1.png" alt="main-img" />
-            </div>
-            <div class="blobs">
-              <img src="images/blobs.png" alt="blobs/" />
-            </div>
-            <div class="message-icon">
-              <img src="images/support chat.png" alt="support" />
-            </div>
+        <ul class="burger-list">
+          <li><a href="about_us.html">О нас</a></li>
+          <li><a href="rates.html">Тарифы</a></li>
+          <li><a href="for_psychologists.html">Психологам</a></li>
+          <li><a>Материалы</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+          <li><a href="#">Вопросы-ответы</a></li>
+          <div class="inputButton_container">
+            <li><a href="#">Войти</a></li>
+            <img
+              src="images/arrow_burger.png"
+              alt="arrow_burger"
+              class="arrow_burger"
+            />
           </div>
-        </section>
-      </div>
+        </ul>
+        <div class="logotypes-container-mobile">
+          <img src="images/vk.png" alt="vk" class="vk-logo-mobile" />
+          <img src="images/telegram.png" alt="tg" class="tg-logo-mobile" />
+          <img src="images/dzen.png" alt="dzen" class="dzen-logo-nobile" />
+        </div>
+      </nav>
+
+      <section class="main-content">
+        <div class="container">
+          <div class="main-info">
+            <h1>Вместе мы справимся</h1>
+            <h2 class="h2-main">Найдите своего психолога онлайн</h2>
+            <a href="#search" class="btn btn-search">Найти психолога</a>
+            <p class="text">2770 руб. за 50 минут сессии</p>
+          </div>
+          <img
+            src="images/illustration 1.png"
+            alt="main-img"
+            class="main-image"
+          />
+          <img
+            src="images/support chat.png"
+            alt="support"
+            class="message-icon"
+          />
+        </div>
+      </section>
 
       <section class="second-block">
         <div class="container">
           <h2>Онлайн-психотерапия становится комфортнее</h2>
+          <!-- radio -->
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+
           <div class="cards">
             <div class="card-info">
               <img
@@ -66,7 +113,7 @@
             <div class="card-info">
               <img
                 class="image-second_block"
-                src="images/check mark.png"
+                src="images/check_mark.png"
                 alt="check"
               />
               <h3>Будьте уверены в своем выборе</h3>
@@ -85,6 +132,12 @@
               <p>Подберем опытного специалиста под ваш запрос</p>
             </div>
           </div>
+          <!-- dots -->
+          <div class="slider-dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
         </div>
       </section>
 
@@ -96,24 +149,533 @@
             Профессиональные психологи помогут разобрать вопросы, которые вы не
             можете решить в одиночку:
           </h4>
+
           <img class="arrow" src="images/noun-arrow.png" alt="arrow" />
-          <ul class="card-container">
-            <li class="white-element">Фобии</li>
-            <li class="white-element">Неврозы</li>
-            <li class="purple-element">Самооценка</li>
-            <li class="white-element">Апатия</li>
-            <li class="white-element">Стрессы</li>
-            <li class="purple-element no">Неуверенность в себе</li>
-            <li class="purple-element">Мотивация</li>
-            <li class="purple-element">Депрессивное состояние</li>
-            <li class="white-element">Безразличие</li>
-            <li class="purple-element">Чувство тревоги</li>
-            <li class="white-element">Хроническая усталость</li>
-            <li class="white-element">Отношения</li>
-            <li class="white-element">Выгорание</li>
-          </ul>
+
+          <!-- Первая строка -->
+          <div class="marquee">
+            <ul class="marquee-track">
+              <li class="white-element">Фобии</li>
+              <li class="white-element">Неврозы</li>
+              <li class="purple-element">Самооценка</li>
+              <li class="white-element">Апатия</li>
+              <li class="white-element">Стрессы</li>
+              <li class="purple-element">Неуверенность в себе</li>
+              <li class="purple-element">Мотивация</li>
+
+              <!-- Дубликат для бесшовности -->
+              <li class="white-element">Фобии</li>
+              <li class="white-element">Неврозы</li>
+              <li class="purple-element">Самооценка</li>
+              <li class="white-element">Апатия</li>
+              <li class="white-element">Стрессы</li>
+              <li class="purple-element">Неуверенность в себе</li>
+              <li class="purple-element">Мотивация</li>
+            </ul>
+          </div>
+
+          <!-- Вторая строка -->
+          <div class="marquee reverse">
+            <ul class="marquee-track">
+              <li class="purple-element">Депрессивное состояние</li>
+              <li class="white-element">Безразличие</li>
+              <li class="purple-element">Чувство тревоги</li>
+              <li class="white-element">Хроническая усталость</li>
+              <li class="white-element">Отношения</li>
+              <li class="white-element">Выгорание</li>
+
+              <!-- Дубликат -->
+              <li class="purple-element">Депрессивное состояние</li>
+              <li class="white-element">Безразличие</li>
+              <li class="purple-element">Чувство тревоги</li>
+              <li class="white-element">Хроническая усталость</li>
+              <li class="white-element">Отношения</li>
+              <li class="white-element">Выгорание</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth-block">
+        <div class="container">
+          <h3>Мы работаем только с</h3>
+          <h2>
+            квалифицированными специалистами, которые прошли наш строгий отбор
+          </h2>
+          <img src="images/line.png" alt="line" class="line" />
+          <h4 id="four-main-h4">
+            Помимо серии собеседований и испытаний по разработанной нами
+            методологии, психологи предоставляют необходимые документы:
+          </h4>
+
+          <!-- radio -->
+          <input type="radio" name="slider" id="adv-slide1" checked />
+          <input type="radio" name="slider" id="adv-slide2" />
+          <input type="radio" name="slider" id="adv-slide3" />
+          <input type="radio" name="slider" id="adv-slide4" />
+
+          <div class="card-advantages">
+            <article class="advantage advantage-flex edu">
+              <img src="images/book.png" alt="book" class="book" />
+              <div class="advantage-details">
+                <h3>Образование</h3>
+                <h4>
+                  Диплом о высшем психологическом образовании и дополнительные
+                  сертификаты
+                </h4>
+              </div>
+            </article>
+            <article class="advantage exp min-card">
+              <h3>Опыт работы</h3>
+              <h4>Подтвержденный опыт работы не менее 3-х лет</h4>
+            </article>
+            <article class="advantage train min-card">
+              <h3>Обучение</h3>
+              <h4 id="passing">Прохождение супервизии от 20 часов в год</h4>
+            </article>
+            <article class="advantage advantage-flex therapy">
+              <img src="images/watch.png" alt="watch" class="watch" />
+              <div class="advantage-details">
+                <h3>Личная терапия</h3>
+                <h4>Прохождение личной терапии от 50 часов в год</h4>
+              </div>
+            </article>
+          </div>
+          <!-- dots -->
+          <div class="slider-dots-Advantages">
+            <label for="adv-slide1"></label>
+            <label for="adv-slide2"></label>
+            <label for="adv-slide3"></label>
+            <label for="adv-slide4"></label>
+          </div>
+        </div>
+      </section>
+
+      <section class="fifth-block">
+        <div class="container">
+          <h2>Сделайте 4 шага навстречу психотерапии</h2>
+          <div class="first-step">
+            <div class="text-number-1">
+              <img src="images/1.png" alt="number-1" class="number-1" />
+              <img
+                src="images/circle1.png"
+                alt="circle-1"
+                class="circle circle-1"
+              />
+              <div class="text-block-1">
+                <h3>Заполните анкету,</h3>
+                <p>
+                  ответив на 5 простых вопросов, определив тему и пожелания
+                  по психологу.
+                </p>
+              </div>
+            </div>
+            <article class="anxiety">
+              <h6>Что вас беспокоит?</h6>
+              <ul class="ovals">
+                <li class="oval1 purple-ovals"></li>
+                <li class="oval2 blue-ovals"></li>
+                <li class="oval3 blue-ovals"></li>
+                <li class="oval4 purple-ovals"></li>
+                <li class="oval5 blue-ovals"></li>
+                <li class="oval6 purple-ovals"></li>
+                <li class="oval7 purple-ovals"></li>
+              </ul>
+            </article>
+          </div>
+          <div class="second-step">
+            <article class="profiles">
+              <div class="profile_1">
+                <img
+                  src="images/specialist 1.png"
+                  alt="profile_1"
+                  class="img-profile_1"
+                />
+                <h6>Валерия Точук</h6>
+                <div class="line-underProfile"></div>
+              </div>
+              <div class="profile_2">
+                <img
+                  src="images/specialist 2.png"
+                  alt="profile_2"
+                  class="img-profile_2"
+                />
+                <h6>Анна Шмид</h6>
+                <div class="line-underProfile"></div>
+              </div>
+              <div class="profile_3">
+                <img
+                  src="images/specialist 3.png"
+                  alt="profile_3"
+                  class="img-profile_3"
+                />
+                <h6>Инна Межина</h6>
+                <div class="line-underProfile"></div>
+              </div>
+            </article>
+            <div class="text-number-2">
+              <img src="images/2.png" alt="number-2" class="number-2" />
+              <img
+                src="images/circle2.png"
+                alt="circle-2"
+                class="circle circle-2"
+              />
+              <div class="text-block-2">
+                <h3>Ознакомьтесь с профилями</h3>
+                <p>
+                  специалистов и посмотрите видео-визитки. Выберите психолога
+                  с которым вам будет комфортно.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="third-step">
+            <div class="text-number-3">
+              <img src="images/3.png" alt="number-3" class="number-3" />
+              <img
+                src="images/circle3.png"
+                alt="circle-3"
+                class="circle circle-3"
+              />
+              <div class="text-block-3">
+                <h3>Определите дату и время</h3>
+                <p>
+                  первой сессии. Если у вас поменяются планы, вы сможете
+                  ее отменить или перенести.
+                </p>
+              </div>
+            </div>
+            <article class="calendar">
+              <div class="profile_4">
+                <img
+                  src="images/specialist 4.png"
+                  alt="profile_4"
+                  class="img-profile_4"
+                />
+                <h6>Инна Межина</h6>
+                <div class="line-underProfile"></div>
+                <div class="line-underProfile_small"></div>
+              </div>
+              <div class="graph">
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar red"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar red"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar red"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar red"></div>
+                <div class="day-of-calendar red"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar red"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar"></div>
+                <div class="day-of-calendar"></div>
+              </div>
+            </article>
+          </div>
+          <div class="four-step">
+            <article class="themes">
+              <h6>Выберите наиболее интересующие темы</h6>
+              <div class="themes-block">
+                <div class="theme-block">
+                  <div class="mark-box purple"></div>
+                  <div class="line-blue"></div>
+                  <div class="mark-box white"></div>
+                  <div class="line-blue"></div>
+                  <div class="mark-box purple"></div>
+                  <div class="line-blue"></div>
+                </div>
+                <div class="theme-block">
+                  <div class="mark-box purple"></div>
+                  <div class="line-blue"></div>
+                  <div class="mark-box white"></div>
+                  <div class="line-blue"></div>
+                  <div class="mark-box white"></div>
+                  <div class="line-blue"></div>
+                </div>
+              </div>
+            </article>
+            <div class="text-number-4">
+              <img src="images/4.png" alt="number-4" class="number-4" />
+              <img
+                src="images/circle4.png"
+                alt="circle-4"
+                class="circle circle-4"
+              />
+              <div class="text-block-4">
+                <h3>Пройдите тестирование</h3>
+                <p>
+                  в личном кабинете для того, чтобы сделать первую сессию более
+                  продуктивной.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="five-button-step">
+            <div class="text-number-5">
+              <img src="images/calendar.png" alt="number-5" class="number-5" />
+              <img
+                src="images/circle5.png"
+                alt="circle-5"
+                class="circle circle-5"
+              />
+              <div class="text-block-5">
+                <p>Мы напомним вам о сессии за сутки и за час до начала</p>
+              </div>
+            </div>
+            <a href="#" class="button_first_step">Сделать первый шаг</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sixth-block">
+        <div class="container">
+          <h2>Вопросы - ответы</h2>
+          <details class="quetion1">
+            <summary>
+              <h5>Эффективно ли работать с психологом онлайн?</h5>
+            </summary>
+            <p>
+              Да, эффективно и уже является стандартной практикой во всем мире.
+              За последние годы было проведено много научных исследований,
+              доказывающих, что данный формат не уступает по эффективности
+              традиционной очной психотерапии.
+            </p>
+          </details>
+          <details class="quetion2">
+            <summary><h5>Как выбрать специалиста?</h5></summary>
+            <p>
+              Мы помогаем с выбором подходящего психолога. Вам необходимо всего
+              лишь заполнить короткую анкету, на основе которой мы определим, в
+              каком направлении вы хотите начать терапию. Под ваш запрос
+              подберем психологов. В результате вы получите список с профилями
+              наиболее подходящих вам специалистов. Окончательный выбор за вами.
+            </p>
+          </details>
+          <details class="quetion3">
+            <summary>
+              <h5>
+                Чувствую, что мне нужна помощь, но не понимаю в чём проблема.
+                <br />
+                Как быть?
+              </h5>
+            </summary>
+            <p>
+              Это абсолютно нормальная ситуация. С ней сталкиваются многие люди
+              в начале работы с психологом. Специалист поможет вам
+              сформулировать запрос. Это обязательный этап, с которого как раз и
+              начинается работа. Часто в процессе терапии запрос может меняться.
+              И это тоже нормально. Поэтому можете смело начинать психотерапию.
+            </p>
+          </details>
+          <details class="quetion4">
+            <summary><h5>Как вы отбираете психологов в базу?</h5></summary>
+            <p>
+              Все психологи, которые попали в базу YouMi, соответствуют ряду
+              обязательных требований:
+              <br />
+              1. Наличие документа об окончании профильного высшего учебного
+              заведения.<br />
+              2. Документы, подтверждающие дополнительное образование в
+              определенном направлении психотерапии. Мы рассматриваем только
+              длительные программы обучения (порядка 500 часов).<br />
+              3. Обязательное прохождение нескольких этапов отбора, включающих
+              интервью и тестирование на профессиональную компетентность и
+              знание этических норм.<br />
+              4. Прохождение личной терапии и регулярной супервизии.<br />
+
+              Психолог не попадает в нашу базу, если хотя бы один из этих
+              пунктов не выполнен. Мы заботимся о вас, поэтому так тщательно
+              подходим к этому вопросу.
+            </p>
+          </details>
+          <details class="quetion5">
+            <summary>
+              <h5>
+                В чем разница между психологом, психотерапевтом и психиатром
+                и как понять кто мне нужен?
+              </h5>
+            </summary>
+            <p>
+              Психиатр — специалист с высшим медицинским образованием. Он может
+              прописывать медикаментозное лечение. Например, антидепрессанты.
+              Заранее понять нужен ли он вам, сложно. Мы советуем начать с
+              консультации психолога или психотерапевта, они помогут разобраться
+              и в случае необходимости порекомендуют обратиться к психиатру. В
+              рамках работы сервиса вы не сможете получить консультацию
+              психиатра, медицинские назначения и рецепты на препараты.<br />
+
+              Психолог — специалист с высшим психологическим образованием.<br />
+
+              Психотерапевтом может называться врач, имеющий
+              психотерапевтическую специализацию, и психолог, который получил
+              дополнительное образование в одном из признанных
+              психотерапевтических направлений (когнитивно-поведенческая
+              терапия, психоанализ, гештальт-терапия и другие). В нашей базе
+              собраны именно такие специалисты, получившие высшее
+              психологическое образованием, прошедшие долгосрочную подготовку в
+              определенном подходе и использующие эффективные методы
+              психотерапии.
+            </p>
+          </details>
+          <details class="quetion6">
+            <summary>
+              <h5>
+                Какое количество сессий мне необходимо, чтобы получить
+                результат?
+              </h5>
+            </summary>
+            <p>
+              Здесь все индивидуально. Многое зависит от специфики вашей
+              проблемы, готовности и внутренних ресурсов для изменений. Значение
+              имеет, насколько вы доверяете психологу, в каком методе он
+              работает. Как правило, терапия может длиться от 10 сессий и до
+              нескольких месяцев.
+            </p>
+          </details>
+          <a href="#" class="btn-more-question">Больше вопросов</a>
+        </div>
+      </section>
+
+      <section class="seventh-block">
+        <div class="container">
+          <div class="app-image-container">
+            <div class="left-part">
+              <h2>YouMi заботиться о вас даже вне сессий</h2>
+              <h4>
+                Работая с YouMi от 4 сессий мы дарим доступ к приложению
+                с виртуальным психологом.
+              </h4>
+              <div class="application-points">
+                <img
+                  src="images/yellow-check-mark.png"
+                  alt="yellow-check-mark"
+                />
+                <p class="app-text">
+                  Прорабатывайте себя с помощью упражнений и аудиопрактик
+                </p>
+                <img
+                  src="images/yellow-check-mark.png"
+                  alt="yellow-check-mark"
+                />
+                <p class="app-text">
+                  Ведите личный дневник настроения и получайте подробную
+                  статистику о себе
+                </p>
+                <img
+                  src="images/yellow-check-mark.png"
+                  alt="yellow-check-mark"
+                />
+                <p class="app-text">
+                  Расскажите виртуальному психологу о своих чувствах
+                  и он подберет актуальный материал
+                </p>
+              </div>
+            </div>
+            <img src="images/Phones.png" alt="phones" class="phones" />
+          </div>
+          <a
+            class="btnDownload"
+            href="https://apps.apple.com/ru/app/triggero-личный-помощник/id6451473147"
+            target="_blank"
+            >Доступно в App Store</a
+          >
+        </div>
+      </section>
+
+      <section class="eighth-block">
+        <div class="container">
+          <h2>Экстренная помощь</h2>
+          <h4>
+            Если вам необходима
+            <b>срочная психологическая помощь</b> и вы чувствуете, что не можете
+            больше справиться самостоятельно, обратитесь по одному из контактов
+            ниже.
+          </h4>
+          <div class="numbers-container">
+            <div class="number-text-first">
+              <h3>+7 495 989 50 50</h3>
+              <p>Центр экстренной психологической помощи МЧС России</p>
+            </div>
+            <div class="number-text-second">
+              <h3>+7 499 173 09 09</h3>
+              <p>Московская служба психологической помощи населению</p>
+            </div>
+            <div class="number-text-third">
+              <h3>8 800 333 44 34</h3>
+              <p>Бесплатная кризисная линия доверия</p>
+            </div>
+            <div class="number-text-fourth">
+              <h3>8 800 700 06 00</h3>
+              <p>
+                Всероссийский телефон доверия для женщин, пострадавших от
+                домашнего насилия
+              </p>
+            </div>
+            <div class="number-text-fifth">
+              <h3>8 800 2000 122</h3>
+              <p>Всероссийская служба детского телефона доверия</p>
+            </div>
+          </div>
+          <img
+            src="images/call-specialist.png"
+            alt="call-specialist"
+            class="call-specialist"
+          />
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="logotypes-container">
+          <a href="#header">
+            <img src="images/logo youmi 2.png" alt="logo" class="logo" />
+          </a>
+          <img src="images/vk.png" alt="vk" class="vk-logo" />
+          <img src="images/telegram.png" alt="tg" class="tg-logo" />
+          <img src="images/dzen.png" alt="dzen" class="dzen-logo" />
+        </div>
+        <div class="support-block">
+          <article class="support-subBlock">
+            <h6>Сотрудничество</h6>
+            <a class="youmiwork-mail" href="mailto:@youmiwork" target="_blank"
+              >@youmiwork</a
+            >
+          </article>
+          <article class="support-subBlock">
+            <h6>Поддержка клиентов</h6>
+            <a class="youmi-mail" href="mailto:@youmi" target="_blank"
+              >@youmi</a
+            >
+          </article>
+        </div>
+        <div class="logotypes-container-mobile">
+          <img src="images/vk.png" alt="vk" class="vk-logo-mobile" />
+          <img src="images/telegram.png" alt="tg" class="tg-logo-mobile" />
+          <img src="images/dzen.png" alt="dzen" class="dzen-logo-nobile" />
+        </div>
+        <div class="about-block">
+          <h5>О нас</h5>
+          <h5>Тарифы</h5>
+          <h5>Психологам</h5>
+        </div>
+        <div class="about-block">
+          <h5>Блог</h5>
+          <h5>Вопрос - ответ</h5>
+          <h5>Контакты</h5>
+        </div>
+        <div class="politic-block">
+          <h6>Обработка персональных данных</h6>
+          <h6>Пользовательское соглашение</h6>
+          <h6>Юридические документы</h6>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
